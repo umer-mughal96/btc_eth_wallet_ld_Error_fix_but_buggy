@@ -1,0 +1,90 @@
+import React from 'react';
+import {
+  StatusBar,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+  AppRegistry
+} from 'react-native';
+import { colors } from '../../config/colors';
+import '../../../shim' ////// make sure to use es6 import and not require()
+import Bitcoin from 'react-native-bitcoinjs-lib'
+
+
+export default function AfterMobileVerify({ navigation }) {
+  const createUserWallet = () => {
+    const keypair = Bitcoin.ECPair.makeRandom()
+    console.log(keypair.getAddress())
+    console.log(navigation.navigate('recoverySeed'))
+  };
+
+  return (
+    <View style={styles.container}>
+      <StatusBar
+        barStyle="dark-content"
+        hidden={false}
+        backgroundColor={colors.main}
+        translucent={true}
+      />
+      <View style={styles.textContainer}>
+        <Text style={styles.textHeading}>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic
+        </Text>
+      </View>
+      <View style={styles.buttonContainer}>
+        <TouchableOpacity
+          style={styles.buttonWrapper}
+          // onPress={() => navigation.navigate('recoverySeed')}
+          onPress={createUserWallet}>
+          <Text style={styles.text}>Next</Text>
+        </TouchableOpacity>
+      </View>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column',
+    backgroundColor: colors.main,
+  },
+  buttonWrapper: {
+    marginTop: 50,
+    width: 200,
+    padding: 10,
+    backgroundColor: 'white',
+    textAlign: 'center',
+    borderRadius: 12,
+  },
+  text: {
+    textAlign: 'center',
+    color: colors.main,
+    fontFamily: 'Poppins-Regular',
+  },
+  textContainer: {
+    flex: 2.5,
+    justifyContent: 'flex-end',
+    padding: (0, 30, 0, 30),
+  },
+  buttonContainer: {
+    flex: 1.5,
+  },
+  textHeading: {
+    backgroundColor: 'white',
+    padding: (10, 30, 10, 30),
+    marginTop: 40,
+    borderRadius: 10,
+    fontFamily: 'Poppins-Regular',
+  },
+});
+
+
+AppRegistry.registerComponent('AfterMobileVerify', () => AfterMobileVerify);

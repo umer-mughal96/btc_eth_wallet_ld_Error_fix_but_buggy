@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="43" height="43" viewBox="0 0 43 43">
+  <defs>
+    <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 25 25">
+      <image width="25" height="25" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUHSURBVEhLdVZbTxtXEP683l3fDdgGYsLNgIEQaCGhKUlaJWrSqGmjKqqqqi/ta/9Gf0X/QdQ+9fLQpGppFalIaahISKJCgABG5WJs4xuXtVnvunPOXmyTMmg8Z+fyzcw5Z4d1AKgS/y856C/ob0FP+wB6IjG0+SJwO2RoahnZYhqJzDpe7a0ip+QJ5FQYQjklSTh8FhfOX8NobBLtgTZ4IUHUdEiVKskqSR16uYxMYRdzm0/xcGMGW/tJM7qRXksiijLGxt/Dlam7aCPwBmBai3YSJmu2veIufnz5ANOU7FhXTTSDnMRfG0tAdntx5dYXmLr2Gfy+INexKixyVI0nS1dvC0heTLSOcLlIW6jqFdNSl8QpyXj7wy8xdvkORKfIVJxOAtYDN+occAoCBpti8DhlvMgsQavq3GInGbx6G+O3Pq8loE20gm3gKh2vbuyu4GDaOhsRWwv0OxDsRqFcxEo+wfUC+wme6cLwzU9QdcmoOB3EAjQu61hwwN/qx9BbPfC3BaBSJNNZ9np/QZZxN/4BuvxRnoR3En//U5wdv2JX1VCdeS0kyYk7H4/jnZvn4GvyYHVxBzp1xX3trmsyKPmgqAqepRchuEOtaLtw2aikrrL66lTamvbOZnT3RpBYz6CzP4Jwd4j01E2dn0ZnYsUynuyYQMQTgtDUNwzXmQ7bYAfQllk6XRIwOtqJUknFb9MLKJUrGBrv5Pp6P4s1s9hIsA0DoRiEQF8c8HoMoxVgOqkky7QXgRYvzsXb8c9KEmubWSyt7GJgpAP+sO/1bkzJWJTdiIV66Yzao7bSYubIDra52Yux+Bm8e7EXTX437bEGd8CFFwvbcHllxEaiUE3/WrxRqKUL+1vpdtld1BIYzrSnQ1F89dEEblyMwUFdXZ/qx/BwFBvJPDa3cxh5sxOST+Yds+5PYjApyS4I6nHJADW3qFaJgIcr27j/PMFv0c+PX+Gb7//Gs7UUFF3HPHXT3tGMaG+Yd20XZ+MYrOjHEJR0kgMawIYTk4xzagXhgAfpooKHC5tY2MrSS6byA3+ZSGP/sIzz1E1VdtqgRjK6EGay3aMMhIO1FZRpdNuVmHxM1UXDfrzRFcHcRgqZ0jGq9K5ootHl3kGJX4QBuhAt/OW0EtT4iLpI7CUgHC4vQknt2AbLURMFXOqlKUzBjzbSjVtCzEDnl5MQKfEQ3TRLz2NNmTyk/znpVTqTTAq52RlS1o0SApBkEWPREBZSeawWDqBTUgPE8GPPG+ki1rZy6OujG+QWGw6f+T3fmEPuMGuMFXUvA/+lKYgBc7zTG67TMEwdKHj8bwbZIzo8bqmNGTY/dPp/spMq0k3LI5s/qo0Xktn8Lu7P3MOhsm8k0YoFmq4afBOTEJyk4kBVJPcVFOktNyauQdaKJWPFsMNnCdg8tmayVlHx+8x3WFl/yp/tUV9KrMJJnXgGhymYDWwjhAHZwCckI1YA9zMe6bpreDL3Cx799RNfM7KTQNNwuPACDq8Xnv44HKwjIh5sbYNJVlrLxoitK9TBs9kHmPnjW6hqyTAQ1ZIQVVUVB8+fQC3k4O7qpTMKmJYTwHWSEVsXMzuY/fUe5v78oSEBI2Y3a2kkV2c3IjduIzx5Fb7WKFz0gSHSF4pEHw3W1wqUEsrJbezMP8Lq42kUUptmdCOdmoQT7bcUiiAQH0awbxDeSBSy5OLgJQIvri8jt74EpbBHKKfBAP8Bjs1WWhcvYIoAAAAASUVORK5CYII="/>
+    </pattern>
+    <filter id="Ellipse_61" x="0" y="0" width="43" height="43" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.188"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Ellipse_61)">
+    <circle id="Ellipse_61-2" data-name="Ellipse 61" cx="12.5" cy="12.5" r="12.5" transform="translate(9 9)" fill="url(#pattern)"/>
+  </g>
+</svg>
