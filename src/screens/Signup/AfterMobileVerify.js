@@ -10,13 +10,25 @@ import {
 import { colors } from '../../config/colors';
 import '../../../shim' ////// make sure to use es6 import and not require()
 import Bitcoin from 'react-native-bitcoinjs-lib'
+import 'react-native-get-random-values'
+import "@ethersproject/shims"  //for ethers.js
+import { ContractFactory, ethers } from "ethers";
 
 
 export default function AfterMobileVerify({ navigation }) {
-  const createUserWallet = () => {
+  const createUserWallet = async () => {
     const keypair = Bitcoin.ECPair.makeRandom()
     console.log(keypair.getAddress())
-    console.log(navigation.navigate('recoverySeed'))
+    // console.log(navigation.navigate('recoverySeed'))
+
+    let privateKey = "0x0123456789012345678901234567890123456789012345678901234567890123";
+    new ethers.Wallet(privateKey);
+
+    let provider = ethers.getDefaultProvider();
+    new ethers.Wallet(privateKey, provider);
+    let randomWallet = ethers.Wallet.createRandom();
+    console.log("🚀 ~ file: AfterMobileVerify.js ~ line 28 ~ createUserWal ~ randomWallet", randomWallet)
+
   };
 
   return (
@@ -87,4 +99,4 @@ const styles = StyleSheet.create({
 });
 
 
-AppRegistry.registerComponent('AfterMobileVerify', () => AfterMobileVerify);
+// AppRegistry.registerComponent('AfterMobileVerify', () => AfterMobileVerify);
