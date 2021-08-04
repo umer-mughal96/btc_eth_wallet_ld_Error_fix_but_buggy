@@ -25,10 +25,15 @@ export default function AfterMobileVerify({ navigation }) {
     new ethers.Wallet(privateKey);
 
     let provider = ethers.getDefaultProvider();
-    new ethers.Wallet(privateKey, provider);
+    let wallet = new ethers.Wallet(privateKey, provider);
     let randomWallet = ethers.Wallet.createRandom();
-    console.log("🚀 ~ file: AfterMobileVerify.js ~ line 28 ~ createUserWal ~ randomWallet", randomWallet)
+    console.log("🚀 ~ file: AfterMobileVerify.js ~ line 28 ~ createUserWal ~ randomWallet", randomWallet.publicKey)
 
+    // let balancePromise = wallet.getBalance();
+
+    // balancePromise.then((balance) => {
+    //   console.log(JSON.parse(balance));
+    // });
   };
 
   return (

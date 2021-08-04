@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import {
   Button,
   StatusBar,
@@ -7,14 +7,15 @@ import {
   View,
   TouchableOpacity,
 } from 'react-native';
-import {colors} from '../config/colors';
-import Svg, {G, Path, Defs, LinearGradient, Stop} from 'react-native-svg';
+import { colors } from '../config/colors';
+// import Svg, {G, Path, Defs, LinearGradient, Stop} from 'react-native-svg';
 import LightButton from '../components/reusable/Button/LightButton';
-import {useDispatch, useSelector} from 'react-redux';
-import {userLogout} from '../redux/actions/auth/auth';
+import { useDispatch, useSelector } from 'react-redux';
+import { userLogout } from '../redux/actions/auth/auth';
+import LinearGradient from 'react-native-linear-gradient';
 
-export default function Landing({navigation}) {
-  const {token} = useSelector(state => state.Auth);
+export default function Landing({ navigation }) {
+  const { token } = useSelector(state => state.Auth);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -182,3 +183,4 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins-Regular',
   },
 });
+

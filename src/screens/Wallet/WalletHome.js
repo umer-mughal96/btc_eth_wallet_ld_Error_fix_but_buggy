@@ -371,7 +371,7 @@ export default function WalletHome({navigation}) {
         <UpSvg />
         <Text
           style={{fontSize: 18, marginBottom: 3, fontFamily: 'Poppins-Medium'}}>
-          Top up your Account now
+          Top up your Account now Haseeb
         </Text>
         <Text
           style={{
