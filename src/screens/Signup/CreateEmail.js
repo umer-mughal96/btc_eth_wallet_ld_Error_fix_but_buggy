@@ -49,12 +49,13 @@ export default function CreateEmail({navigation}) {
       />
 
       <View style={styles.emailWrapper}>
-        <Text style={styles.emailText}>Your Email</Text>
+        <Text style={styles.emailText}>Your Email </Text>
 
         <TextInput
           style={styles.input}
           onChangeText={text => validate(text)}
           value={email}
+          
           placeholder="Email"
         />
       </View>
