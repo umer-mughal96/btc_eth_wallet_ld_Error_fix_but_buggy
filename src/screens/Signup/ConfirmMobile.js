@@ -59,8 +59,8 @@ export default function CreateMobile({navigation}) {
       <View style={styles.buttonsWrapper}>
         <DarkButton
           name="Next"
-          onPress={nextButtonHandler}
-          disabled={!numberValid}
+          onPress={() => navigation.navigate('verifyMobile')}
+          // disabled={!numberValid}
         />
         <TouchableOpacity>
           <Text style={styles.loginText}>Login</Text>

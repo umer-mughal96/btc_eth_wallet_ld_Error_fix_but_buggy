@@ -71,12 +71,13 @@ export default function MobileVerifyToken({navigation}) {
           placeholder="000-0000-00"
           keyboardType="number-pad"
         />
+           {/* verifyMobile */}
       </View>
       <View style={styles.buttonsWrapper}>
-        <DarkButton
+        <DarkButton   
           name="Next"
-          onPress={validateConfirmationCodeHandler}
-          disabled={!codeValidate}
+          onPress={() => navigation.navigate('afterMobileVerify')}
+          // disabled={!codeValidate}
         />
         <TouchableOpacity>
           <Text style={styles.loginText}>Login</Text>

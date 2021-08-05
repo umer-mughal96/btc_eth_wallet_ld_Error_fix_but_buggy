@@ -73,8 +73,8 @@ export default function EmailVerifyToken({navigation}) {
       <View style={styles.buttonsWrapper}>
         <DarkButton
           name="Next"
-          onPress={validateConfirmationCodeHandler}
-          disabled={!codeValidate}
+          onPress={() => navigation.navigate('createMobile')}
+          // disabled={!codeValidate}
         />
         <TouchableOpacity>
           <Text style={styles.loginText}>Login</Text>

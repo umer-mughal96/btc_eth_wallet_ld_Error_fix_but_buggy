@@ -8,11 +8,11 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import { colors } from '../config/colors';
-// import Svg, {G, Path, Defs, LinearGradient, Stop} from 'react-native-svg';
+import Svg, {G, Path, Defs, LinearGradient, Stop} from 'react-native-svg';
 import LightButton from '../components/reusable/Button/LightButton';
 import { useDispatch, useSelector } from 'react-redux';
 import { userLogout } from '../redux/actions/auth/auth';
-import LinearGradient from 'react-native-linear-gradient';
+// import LinearGradient from 'react-native-linear-gradient';
 
 export default function Landing({ navigation }) {
   const { token } = useSelector(state => state.Auth);
@@ -44,8 +44,8 @@ export default function Landing({ navigation }) {
               x2="1"
               y2="0.5"
               gradientUnits="objectBoundingBox">
-              <Stop offset="0" stopColor="#fed665" />
-              <Stop offset="0.204" stopColor="#a76a1c" />
+              <Stop offset="0" stopColor="red" />
+              <Stop offset="0.204" stopColor="red" />
               <Stop offset="0.264" stopColor="#aa6d1e" />
               <Stop offset="0.322" stopColor="#b37926" />
               <Stop offset="0.379" stopColor="#c38c33" />
@@ -137,7 +137,7 @@ export default function Landing({ navigation }) {
         />
         <TouchableOpacity
           style={styles.signup}
-          onPress={() => navigation.navigate('afterMobileVerify')}>
+          onPress={() => navigation.navigate('createEmail')}>
           <Text style={styles.signupText}>Signup</Text>
         </TouchableOpacity>
       </View>

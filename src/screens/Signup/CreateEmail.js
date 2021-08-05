@@ -49,7 +49,7 @@ export default function CreateEmail({navigation}) {
       />
 
       <View style={styles.emailWrapper}>
-        <Text style={styles.emailText}>Your email</Text>
+        <Text style={styles.emailText}>Your Email</Text>
 
         <TextInput
           style={styles.input}
@@ -62,9 +62,9 @@ export default function CreateEmail({navigation}) {
         <DarkButton
           name="Next"
           onPress={() => navigation.navigate('confirmEmail')}
-          disabled={!emailCorrect}
+          // disabled={!emailCorrect}
         />
-        <TouchableOpacity>
+        <TouchableOpacity >
           <Text style={styles.loginText}>Login</Text>
         </TouchableOpacity>
       </View>
@@ -104,4 +104,5 @@ const styles = StyleSheet.create({
     marginTop: 81,
     fontFamily: 'Poppins-Medium',
   },
+
 });
