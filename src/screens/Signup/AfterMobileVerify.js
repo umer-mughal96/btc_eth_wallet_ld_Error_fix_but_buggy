@@ -45,13 +45,23 @@ export default function AfterMobileVerify({ navigation }) {
         translucent={true}
       />
       <View style={styles.textContainer}>
-        <Text style={styles.textHeading}>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic
-        </Text>
+        <View style={{
+          borderBottomLeftRadius: 20,
+          borderBottomRightRadius: 20,
+          borderTopLeftRadius: 20,
+          borderTopRightRadius: 20,
+          overflow: 'hidden',
+          backgroundColor : 'red'
+        }}>
+          <Text style={styles.textHeading}>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only
+            five centuries, but also the leap into electronic
+          </Text>
+        </View>
+
       </View>
       <View style={styles.buttonContainer}>
         <TouchableOpacity
@@ -97,9 +107,8 @@ const styles = StyleSheet.create({
   textHeading: {
     backgroundColor: 'white',
     padding: (10, 30, 10, 30),
-    marginTop: 40,
-    borderRadius: 10,
     fontFamily: 'Poppins-Regular',
+    fontSize : 14
   },
 });
 
