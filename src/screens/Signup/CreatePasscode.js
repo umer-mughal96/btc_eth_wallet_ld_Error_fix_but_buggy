@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import DarkButton from '../../components/reusable/Button/DarkButton';
 import Input from '../../components/reusable/PasscodeInput/Input';
+import Icon from 'react-native-vector-icons/AntDesign';
 
 export default function CreatePasscode({navigation}) {
   const [codeCreated, setCodeCreated] = useState(false);
@@ -33,10 +34,22 @@ export default function CreatePasscode({navigation}) {
         <DarkButton
           name="Next"
           onPress={() => navigation.navigate('confrimPasscode')}
-          disabled={!codeCreated}
+          // disabled={!codeCreated}
         />
-        <TouchableOpacity onPress={() => navigation.navigate('Signin')}>
-          <Text style={styles.loginText}>Login</Text>
+        <TouchableOpacity
+        style={{
+            marginTop: 10,
+            paddingVertical: 15,
+            paddingHorizontal: 10,
+            flexDirection: 'row',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+          onPress={() => navigation.navigate('Signin')}>
+           <View style={{flexDirection:"row"}}>
+           <Text style={styles.loginText}>Signup</Text>
+          <Icon name="right" color="#000000" size={18} />
+          </View>
         </TouchableOpacity>
       </View>
     </View>
@@ -57,11 +70,12 @@ const styles = StyleSheet.create({
   buttonsWrapper: {
     flex: 2,
     justifyContent: 'center',
+    
   },
   loginText: {
     textAlign: 'center',
-    marginTop: 50,
     fontFamily: 'Poppins-Medium',
+    
   },
   passcodeHeading: {
     fontFamily: 'Poppins-SemiBold',

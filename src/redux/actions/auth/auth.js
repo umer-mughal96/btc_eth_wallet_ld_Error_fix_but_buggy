@@ -9,14 +9,13 @@ export const userLogin = (data, navigation) => async dispatch => {
     dispatch({type: constants.LOGIN_FAIL, payload: err});
   }
 };
-
-export const userLogout = (data, navigation) => async dispatch => {
+export const referralScreen = reff => async dispatch => {
   try {
     dispatch({type: constants.SET_AUTH_LOADING});
-    dispatch({type: constants.LOGOUT_SUCCESS});
+    dispatch({type: constants.REFF_SUCCESS, payload: reff});
   } catch (err) {
     console.log('🚀 ~ file: user.js ~ line 14 ~ err', err);
-    dispatch({type: constants.LOGOUT_FAIL, payload: err});
+    dispatch({type: constants.REFF_FAIL, payload: err});
   }
 };
 
@@ -29,6 +28,18 @@ export const userCreatePasscode = passcode => async dispatch => {
     dispatch({type: constants.AUTH_ERROR, payload: err});
   }
 };
+
+export const userLogout = (data, navigation) => async dispatch => {
+  try {
+    dispatch({type: constants.SET_AUTH_LOADING});
+    dispatch({type: constants.LOGOUT_SUCCESS});
+  } catch (err) {
+    console.log('🚀 ~ file: user.js ~ line 14 ~ err', err);
+    dispatch({type: constants.LOGOUT_FAIL, payload: err});
+  }
+};
+
+
 
 export const userCreateEmail = email => async dispatch => {
   try {

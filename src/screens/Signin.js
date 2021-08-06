@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 import DarkButton from '../components/reusable/Button/DarkButton';
 import Input from '../components/reusable/PasscodeInput/Input';
-import ForwardArrow from '../components/reusable/Arrow/ForwardArrow';
+import Icon from 'react-native-vector-icons/AntDesign';
 import {userLogin} from '../redux/actions/auth/auth';
 import {useDispatch, useSelector} from 'react-redux';
 
@@ -37,7 +37,6 @@ export default function Signin({navigation}) {
       // alert('Wrong Passcode');
       // return;
       navigation.navigate('walletHome');
-
     }
   };
   return (
@@ -58,13 +57,23 @@ export default function Signin({navigation}) {
       <View style={styles.buttonsWrapper}>
         <DarkButton
           name="Login"
-          onPress={loginHandler}
-          disabled={!codeCreated}
+          // onPress={() => navigation.navigate('createPasscode')}
+          // disabled={!codeCreated}
         />
-        <Text style={styles.restoreText}>Restore Drau account</Text>
-        <TouchableOpacity>
-          <Text style={styles.signupText}>Signup</Text>
-          <ForwardArrow />
+        <Text style={styles.restoreText}>Restore Yearn account</Text>
+        <TouchableOpacity
+          style={{
+            marginTop: 10,
+            paddingVertical: 15,
+            paddingHorizontal: 10,
+            flexDirection: 'row',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}>
+          <View style={{flexDirection: 'row'}}>
+            <Text style={styles.signupText}>Signup</Text>
+            <Icon name="right" color="#000000" size={18} />
+          </View>
         </TouchableOpacity>
       </View>
     </View>
@@ -89,7 +98,6 @@ const styles = StyleSheet.create({
   },
   signupText: {
     textAlign: 'center',
-    marginTop: 50,
     fontFamily: 'Poppins-Medium',
   },
   passcodeHeading: {

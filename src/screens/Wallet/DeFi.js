@@ -2,6 +2,7 @@ import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import {Card} from 'react-native-shadow-cards';
+
 import Icon from 'react-native-vector-icons/Ionicons';
 import Svg, {
   G,

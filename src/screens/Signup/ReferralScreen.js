@@ -11,32 +11,31 @@ import {
 } from 'react-native';
 import DarkButton from '../../components/reusable/Button/DarkButton';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import {userCreateEmail} from '../../redux/actions/auth/auth';
+import {referralScreen} from '../../redux/actions/auth/auth';
 import {useDispatch} from 'react-redux';
 import Icon from 'react-native-vector-icons/AntDesign';
 
-export default function CreateEmail({navigation}) {
-  const [email, setEmail] = useState('');
-  const [emailCorrect, setEmailCorrect] = useState(false);
+export default function ReferralScreen({navigation}) {
+  const [refdata, setRefdata] = useState('');
+  const [refcorrect, setrefcorrect] = useState(false);
   const dispatch = useDispatch();
 
   const validate = text => {
     console.log(text);
     let reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w\w+)+$/;
     if (reg.test(text) === false) {
-      setEmail(text);
-      setEmailCorrect(false);
+      setRefdata(text);
+      setrefcorrect(false);
       return false;
     } else {
-      setEmail(text);
-      setEmailCorrect(true);
+      setRefdata(text);
+      setrefcorrect(true);
       saveData(text);
     }
   };
-
   const saveData = async text => {
     try {
-      dispatch(userCreateEmail(text));
+      dispatch(referralScreen(text));
     } catch (e) {
       alert('Failed to save the data to the storage');
     }
@@ -49,9 +48,8 @@ export default function CreateEmail({navigation}) {
         backgroundColor="white"
         translucent={true}
       />
-
-      <View style={styles.emailWrapper}>
-        <Text style={styles.emailText}>Your Email </Text>
+      <View style={styles.refWrapper}>
+        <Text style={styles.refText}>Referral Code</Text>
 
         <TextInput
           style={
@@ -70,34 +68,28 @@ export default function CreateEmail({navigation}) {
                 }
           }
           onChangeText={text => validate(text)}
-          value={email}
-          placeholder="Email"
+          value={refdata}
+          placeholder="Referral Code"
         />
+        <View style={{marginTop: '52%', width: '68%'}}>
+          <Text style={styles.textcenter}>
+            *You will only be eligible to receive your signup bonus after
+            completing       {"\n"}                your account setup.
+          </Text>
+        </View>
       </View>
-      <View style={styles.buttonsWrapper}>
-        <DarkButton
-          name="Next"
-          onPress={() => navigation.navigate('confirmEmail')}
-          // disabled={!emailCorrect}
-        />
-
-        <TouchableOpacity
-          style={{
-            marginTop: 20,
-            paddingVertical: 15,
-            paddingHorizontal: 10,
-            flexDirection: 'row',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}>
-          <Text style={styles.loginText}>Login</Text>
-          <Icon name="right" color="#000000" size={18} />
-        </TouchableOpacity>
+      <View style={{flex: 1}}>
+        <View style={styles.buttonsWrapper}>
+          <DarkButton
+            name="Contine"
+            onPress={() => navigation.navigate('')}
+            //   disabled={!refcorrect}
+          />
+        </View>
       </View>
     </View>
   );
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -106,16 +98,20 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     backgroundColor: 'white',
   },
-  emailWrapper: {
-    flex: 2.2,
-    justifyContent: 'flex-end',
-  },
-  buttonsWrapper: {
+  refWrapper: {
     flex: 2,
+    marginTop: 150,
     justifyContent: 'center',
+    alignItems: 'center',
+    
+  },
+  refText: {
+    fontFamily: 'Poppins-SemiBold',
+    textAlign: 'center',
+    marginBottom: 60,
   },
   input: {
-    width: 320,
+    width: 250,
     padding: 15,
     backgroundColor: 'white',
     borderRadius: 10,
@@ -123,14 +119,18 @@ const styles = StyleSheet.create({
     shadowOffset: {width: 0, height: 1},
     shadowOpacity: 0.3,
     elevation: 5,
+    
   },
-  emailText: {
+  buttonsWrapper: {
+    flex: 1,
+    justifyContent: 'center',
+    
+    marginBottom: '38.5%',
+  },
+
+  textcenter: {
+    alignItems: 'center',
     fontFamily: 'Poppins-SemiBold',
-    textAlign: 'center',
-    marginBottom: 37,
-  },
-  loginText: {
-    textAlign: 'center',
-    fontFamily: 'Poppins-Medium',
+    marginTop: 20,
   },
 });

@@ -1,5 +1,7 @@
 export const SET_AUTH_LOADING = 'SET_AUTH_LOADING'
 
+export const REFF_SUCCESS = 'REFF_SUCCESS'
+export const REFF_FAIL = 'REFF_FAIL'
 
 export const LOGIN_SUCCESS = 'LOGIN_SUCCESS'
 export const LOGIN_FAIL = 'LOGIN_FAIL'

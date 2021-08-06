@@ -35,9 +35,13 @@ export default function Landing({ navigation }) {
         <View style={styles.svgWraper}>
           <LandingLogo />
         </View>
+
         <View style={styles.buttonsWrapper}>
           <View style={styles.referalWrapper}>
-            <Text style={styles.referalCode}>Invited? Add Referral Code</Text>
+            <Text 
+            style={styles.referalCode}
+            onPress={() => navigation.navigate('referralScreen')}
+            >Invited? Add Referral Code</Text>
           </View>
           <LightButton
             name="Login"
@@ -47,7 +51,7 @@ export default function Landing({ navigation }) {
           />
           <TouchableOpacity
             style={styles.signup}
-            onPress={() => navigation.navigate('createEmail')}>
+            onPress={() => navigation.navigate('createPasscode')}>
             <Text style={styles.signupText}>Signup</Text>
           </TouchableOpacity>
         </View>
@@ -76,6 +80,9 @@ const styles = StyleSheet.create({
   buttonsWrapper: {
     flex: 1,
     flexDirection: 'column',
+    backgroundColor:"red",
+    justifyContent:"center",
+    alignItems:"center"
   },
   referalWrapper: {
     width: 200,

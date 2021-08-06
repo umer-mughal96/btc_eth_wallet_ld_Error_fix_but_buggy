@@ -12,6 +12,7 @@ import {
 import {useDispatch, useSelector} from 'react-redux';
 import DarkButton from '../../components/reusable/Button/DarkButton';
 import {sendEmailForCode} from '../../redux/actions/user/user';
+import Icon from 'react-native-vector-icons/AntDesign';
 
 export default function ConfirmEmail({navigation}) {
   const [email, setEmail] = useState('');
@@ -53,7 +54,7 @@ export default function ConfirmEmail({navigation}) {
     let data = {
       email,
     };
-    // dispatch(sendEmailForCode(data, navigation));
+    dispatch(sendEmailForCode(data, navigation));
     navigation.navigate('verifyEmail');
   };
 
@@ -70,11 +71,27 @@ export default function ConfirmEmail({navigation}) {
         <Text style={styles.emailText}>Confirm your Email</Text>
 
         <TextInput
-          style={styles.input}
+          style={
+            Platform.OS === 'ios'
+              ? styles.input
+              : {
+                  width: 320,
+                  padding: 15,
+                  backgroundColor: 'white',
+                  borderRadius: 10,
+                  shadowColor: '#000',
+                  shadowOffset: {width: 0, height: 2},
+                  shadowOpacity: 0.5,
+
+                  elevation: 5,
+                }
+          }
           onChangeText={text => validate(text)}
           value={email}
           placeholder="Email"
         />
+
+
       </View>
       <View style={styles.buttonsWrapper}>
         <DarkButton
@@ -82,8 +99,18 @@ export default function ConfirmEmail({navigation}) {
           onPress={() => navigation.navigate('verifyEmail')}
           // disabled={!emailMatch}
         />
-        <TouchableOpacity>
+        <TouchableOpacity style={{
+            marginTop: 20,
+            paddingVertical: 15,
+            paddingHorizontal: 10,
+            flexDirection: 'row',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}>
+          <View style={{flexDirection:"row"}}>
           <Text style={styles.loginText}>Login</Text>
+          <Icon name="right" color="#000000" size={18} />
+          </View>
         </TouchableOpacity>
       </View>
     </View>
@@ -108,14 +135,18 @@ const styles = StyleSheet.create({
   },
   loginText: {
     textAlign: 'center',
-    marginTop: 81,
+   
     fontFamily: 'Poppins-Medium',
   },
   input: {
     width: 320,
     padding: 15,
+    backgroundColor: 'white',
     borderRadius: 10,
-    borderWidth: 1,
+    shadowColor: '#000',
+    shadowOffset: {width: 0, height: 1},
+    shadowOpacity: 0.3,
+    elevation: 5,
   },
   emailText: {
     fontFamily: 'Poppins-SemiBold',

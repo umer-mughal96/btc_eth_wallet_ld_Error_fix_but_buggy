@@ -16,6 +16,7 @@ import AfterMobileVerify from '../screens/Signup/AfterMobileVerify';
 import RecoverySeed from '../screens/Signup/RecoverySeed';
 import WalletHome from '../screens/Wallet/WalletHome';
 import DeFi from '../screens/Wallet/DeFi';
+import ReferralScreen from '../screens/Signup/ReferralScreen';
 
 export default function Navigation() {
   const Stack = createStackNavigator();
@@ -25,6 +26,20 @@ export default function Navigation() {
         options={{headerShown: false}}
         name="Landing"
         component={Landing}
+      />
+      <Stack.Screen
+        options={{
+          title: '',
+          headerStyle: {
+            backgroundColor: 'white',
+          },
+          headerTintColor: 'black',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}
+        name="referralScreen"
+        component={ReferralScreen}
       />
       <Stack.Screen name="Signup" component={Signup} />
       <Stack.Screen
