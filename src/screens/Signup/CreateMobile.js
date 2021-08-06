@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import {
   StatusBar,
   StyleSheet,
@@ -12,11 +12,11 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { userCreatePhone } from '../../redux/actions/auth/auth';
 import { useDispatch } from 'react-redux';
 
-export default function CreateMobile({navigation}) {
+export default function CreateMobile({ navigation }) {
   const [numberValid, setNumberValid] = useState(false);
   const [phoneNumber, setPhoneNumber] = useState('');
   const dispatch = useDispatch()
- 
+
 
   const saveData = async (number) => {
     try {
@@ -55,8 +55,8 @@ export default function CreateMobile({navigation}) {
       <View style={styles.buttonsWrapper}>
         <DarkButton
           name="Next"
-          onPress={() => navigation.navigate('confirmMobile')}
-          // disabled={!numberValid}
+          onPress={nextButtonHandler}
+          disabled={!numberValid}
         />
         <TouchableOpacity>
           <Text style={styles.loginText}>Login</Text>
@@ -82,13 +82,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   heading: {
-    fontFamily : 'Poppins-SemiBold',
+    fontFamily: 'Poppins-SemiBold',
     textAlign: 'center',
     marginBottom: 37,
   },
   loginText: {
     textAlign: 'center',
     marginTop: 81,
-    fontFamily : 'Poppins-Medium',
+    fontFamily: 'Poppins-Medium',
   }
 });

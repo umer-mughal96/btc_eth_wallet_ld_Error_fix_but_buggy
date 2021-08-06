@@ -34,8 +34,8 @@ export default function Signin({navigation}) {
       dispatch(userLogin());
       navigation.navigate('walletHome');
     } else {
-      // alert('Wrong Passcode');
-      // return;
+      alert('Wrong Passcode');
+      return;
       navigation.navigate('walletHome');
     }
   };
@@ -57,7 +57,7 @@ export default function Signin({navigation}) {
       <View style={styles.buttonsWrapper}>
         <DarkButton
           name="Login"
-          onPress={() => navigation.navigate('walletHome')}
+          onPress={loginHandler}
           disabled={!codeCreated}
         />
         <Text style={styles.restoreText}>Restore Yearn account</Text>

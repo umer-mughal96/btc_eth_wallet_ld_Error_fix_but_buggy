@@ -85,7 +85,7 @@ export default function ConfirmPasscode({navigation}) {
         <DarkButton
           name="Next"
           onPress={() => navigation.navigate('createEmail')}
-          // disabled={!passwordMatch}
+          disabled={!passwordMatch}
         />
         <TouchableOpacity>
           <Text style={styles.loginText}>Login</Text>

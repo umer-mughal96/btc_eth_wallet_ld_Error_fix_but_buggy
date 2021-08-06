@@ -1,5 +1,5 @@
-import React, {useEffect} from 'react';
-import {useState} from 'react';
+import React, { useEffect } from 'react';
+import { useState } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {
   StyleSheet,
@@ -10,15 +10,15 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import DarkButton from '../../components/reusable/Button/DarkButton';
-import {useSelector} from 'react-redux';
+import { useSelector } from 'react-redux';
 import Icon from 'react-native-vector-icons/AntDesign';
 
-export default function EmailVerifyToken({navigation}) {
+export default function EmailVerifyToken({ navigation }) {
   const [confirmationCode, setConfirmationCode] = useState('');
   const [existingConfirmationCode, setExistingConfirmationCode] = useState('');
   const [matchConfirmationCode, setMatchConfirmationCode] = useState(false);
   const [codeValidate, setCodeValidate] = useState(false);
-  const {emailCode} = useSelector(s => s.User);
+  const { emailCode } = useSelector(s => s.User);
 
   useEffect(() => {
     setExistingConfirmationCode(emailCode);
@@ -39,8 +39,8 @@ export default function EmailVerifyToken({navigation}) {
       setMatchConfirmationCode(true);
       navigation.navigate('createMobile');
     } else {
-      // alert('Confirmation Code Dont Match');
-      // setCodeValidate(false);
+      alert('Confirmation Code Dont Match');
+      setCodeValidate(false);
       setMatchConfirmationCode(true);
       navigation.navigate('createMobile');
 
@@ -67,18 +67,18 @@ export default function EmailVerifyToken({navigation}) {
             Platform.OS === 'ios'
               ? styles.input
               : {
-                  width: 320,
-                  padding: 15,
-                  backgroundColor: 'white',
-                  borderRadius: 10,
-                  shadowColor: '#000',
-                  shadowOffset: {width: 0, height: 2},
-                  shadowOpacity: 0.5,
+                width: 320,
+                padding: 15,
+                backgroundColor: 'white',
+                borderRadius: 10,
+                shadowColor: '#000',
+                shadowOffset: { width: 0, height: 2 },
+                shadowOpacity: 0.5,
 
-                  elevation: 5,
-                }
+                elevation: 5,
+              }
           }
-          onChangeText={text => validate(text)}
+          onChangeText={text => onCodeChangeHandler(text)}
           value={confirmationCode}
           placeholder="Confirmation Code Here"
         />
@@ -86,20 +86,20 @@ export default function EmailVerifyToken({navigation}) {
       <View style={styles.buttonsWrapper}>
         <DarkButton
           name="Next"
-          onPress={() => navigation.navigate('createMobile')}
-          // disabled={!codeValidate}
+          onPress={validateConfirmationCodeHandler}
+          disabled={!codeValidate}
         />
         <TouchableOpacity style={{
-            marginTop: 20,
-            paddingVertical: 15,
-            paddingHorizontal: 10,
-            flexDirection: 'row',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}>
-          <View style={{flexDirection:"row"}}>
-          <Text style={styles.loginText}>Login</Text>
-          <Icon name="right" color="#000000" size={18} />
+          marginTop: 20,
+          paddingVertical: 15,
+          paddingHorizontal: 10,
+          flexDirection: 'row',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}>
+          <View style={{ flexDirection: "row" }}>
+            <Text style={styles.loginText}>Login</Text>
+            <Icon name="right" color="#000000" size={18} />
           </View>
         </TouchableOpacity>
       </View>
@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     borderRadius: 10,
     shadowColor: '#000',
-    shadowOffset: {width: 0, height: 1},
+    shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.3,
     elevation: 5,
   },

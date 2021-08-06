@@ -13,9 +13,20 @@ import Bitcoin from 'react-native-bitcoinjs-lib'
 import 'react-native-get-random-values'
 import "@ethersproject/shims"  //for ethers.js
 import { ContractFactory, ethers } from "ethers";
+import { useDispatch, useSelector } from 'react-redux';
+import { registerUser } from '../../redux/actions/user/user';
 
 
 export default function AfterMobileVerify({ navigation }) {
+
+  const { email, phone, passcode } = useSelector(s => s.Auth)
+
+
+
+  const dispatch = useDispatch()
+
+
+
   const createUserWallet = async () => {
     const keypair = Bitcoin.ECPair.makeRandom()
     console.log(keypair.getAddress())
@@ -34,6 +45,15 @@ export default function AfterMobileVerify({ navigation }) {
     // balancePromise.then((balance) => {
     //   console.log(JSON.parse(balance));
     // });
+
+    let userData = {
+      email,
+      passcode,
+      phoneNumber: phone,
+
+    }
+
+    dispatch(registerUser(navigation, userData))
   };
 
   return (
@@ -51,7 +71,7 @@ export default function AfterMobileVerify({ navigation }) {
           borderTopLeftRadius: 20,
           borderTopRightRadius: 20,
           overflow: 'hidden',
-          backgroundColor : 'red'
+          backgroundColor: 'red'
         }}>
           <Text style={styles.textHeading}>
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -108,7 +128,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     padding: (10, 30, 10, 30),
     fontFamily: 'Poppins-Regular',
-    fontSize : 14
+    fontSize: 14
   },
 });
 

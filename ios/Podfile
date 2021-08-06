@@ -15,6 +15,8 @@ target 'BTC_ETH_WALLET' do
   pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-async-storage/async-storage'
   pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
 
+  pod 'react-native-randombytes', :path => '../node_modules/react-native-randombytes'
+
   target 'BTC_ETH_WALLETTests' do
     inherit! :complete
     # Pods for testing

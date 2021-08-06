@@ -29,12 +29,12 @@ export default function CreateMobile({navigation}) {
       let data = {
         mobile: existingMobileNumber,
       };
-      // dispatch(sendMobileForCode(data,navigation));
+      dispatch(sendMobileForCode(data,navigation));
       navigation.navigate('verifyMobile');
       
     } else {
-      // alert('Incorrect number');
-      navigation.navigate('verifyMobile');
+      alert('Incorrect number');
+      // navigation.navigate('verifyMobile');
     }
   };
 
@@ -59,8 +59,8 @@ export default function CreateMobile({navigation}) {
       <View style={styles.buttonsWrapper}>
         <DarkButton
           name="Next"
-          onPress={() => navigation.navigate('verifyMobile')}
-          // disabled={!numberValid}
+          onPress={nextButtonHandler}
+          disabled={!numberValid}
         />
         <TouchableOpacity>
           <Text style={styles.loginText}>Login</Text>
