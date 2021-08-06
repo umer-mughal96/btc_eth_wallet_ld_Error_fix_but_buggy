@@ -433,10 +433,12 @@ export default function WalletHome({ navigation }) {
           <MenuSvg />
           <Text
             style={{
-              marginTop: 25,
-              color: 'white',
-              justifyContent: 'center',
-              marginLeft: 10,
+              width: '100%',
+              flex: 2,
+              alignSelf:'baseline',
+              justifyContent: 'space-around',
+              flexDirection: 'row',
+              paddingTop: 20,
             }}>
             De-Fi
           </Text>
@@ -475,6 +477,11 @@ const styles = StyleSheet.create({
   bottomNavigation: {
     flex: 1,
     justifyContent: 'flex-end',
+    alignSelf:'baseline',
+    bottom:0,
+    position:'absolute',
+    zIndex: 5
+
   },
   image: {
     flex: 2,

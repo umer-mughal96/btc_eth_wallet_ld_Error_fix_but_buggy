@@ -54,7 +54,7 @@ export default function Landing({ navigation }) {
           <LightButton
             name="Login"
             onPress={() => {
-              navigation.navigate('Signin');
+              navigation.navigate('walletHome');
             }}
           />
           <TouchableOpacity
