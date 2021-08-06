@@ -324,24 +324,14 @@ export default function WalletHome({navigation}) {
         <UpSvg />
         <Text
           style={{fontSize: 18, marginBottom: 3, fontFamily: 'Poppins-Medium'}}>
-          Top up your Account now Haseeb
+          Top up your Account now 
         </Text>
-        <Text
-          style={{
-            fontFamily: 'Poppins-Light',
-            paddingLeft: 30,
-            paddingRight: 30,
-            textAlign: 'center',
-            fontSize: 14,
-          }}>
-          Add some funds to start exploring the possibilities of cryptocurrency
-        </Text>
-        <DefiSvg navigation={navigation} />
-
-        {/* <Text>This is Wallet Home</Text> */}
+       
+        
+      
       </View>
       <View style={styles.cards}>
-        <Card  style={{ width: '90%',height:80, marginLeft: 10, marginRight: 10, marginBottom:8, flexDirection:'row', borderRadius:12}}>
+        <Card  style={{ width: '90%',height:80, marginLeft: 10, marginRight: 10, marginBottom:8, flexDirection:'row', borderRadius:12}} onPress={() => navigation.navigate('home2')}>
         <LinearGradient colors={['#0B7F42', '#001A0A']} style={{width:'100%', height:'100%',padding: 10, borderRadius:12, flex:1, flexDirection:'row'}}>
         
          <Yearn_logo></Yearn_logo>
@@ -417,32 +407,36 @@ export default function WalletHome({navigation}) {
           </LinearGradient>
         </Card>
       </View>
-     
       <View style={styles.bottomNavigation}>
-        <ImageBackground
-          source={require('../../assets/bottom-navigation.png')}
-          style={{
-            width: '100%',
-            flex: 2,
-            justifyContent: 'space-around',
-            flexDirection: 'row',
-            paddingTop: 20,
-          }}>
-          <WalletSvg />
-          <MenuSvg />
-          <Text
+        
+        <DefiSvg navigation={navigation} />
+          <ImageBackground
+            source={require('../../assets/bottom-navigation.png')}
             style={{
-              marginTop: 25,
-              color: 'white',
-              justifyContent: 'center',
-              marginLeft: 10,
+              width: '100%',
+              flex: 2,
+              alignSelf:'baseline',
+              justifyContent: 'space-around',
+              flexDirection: 'row',
+              paddingTop: 20,
             }}>
-            De-Fi
-          </Text>
-          <UsersSvg />
-          <ProfileSvg />
-        </ImageBackground>
-      </View>
+            <WalletSvg />
+            <MenuSvg />
+            <Text
+              style={{
+                marginTop: 25,
+                color: 'white',
+                justifyContent: 'center',
+                marginLeft: 10,
+              }}>
+              De-Fi
+            </Text>
+            <UsersSvg />
+            <ProfileSvg />
+          </ImageBackground>
+        </View>
+        {/* <Text>This is Wallet Home</Text> */}
+     
     </View>
   );
 }
@@ -463,7 +457,7 @@ const styles = StyleSheet.create({
     flex: 3,
     justifyContent: 'center',
     alignContent:'center',
-    
+    position:'relative',
     alignItems: 'center',
     flexDirection: 'column',
   },
@@ -475,6 +469,11 @@ const styles = StyleSheet.create({
   bottomNavigation: {
     flex: 1,
     justifyContent: 'flex-end',
+    alignSelf:'baseline',
+    bottom:0,
+    position:'absolute',
+    zIndex: 5
+
   },
   image: {
     flex: 2,
