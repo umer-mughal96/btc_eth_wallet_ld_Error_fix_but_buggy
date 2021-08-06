@@ -82,7 +82,7 @@ export default function ReferralScreen({navigation}) {
         <View style={styles.buttonsWrapper}>
           <DarkButton
             name="Contine"
-            onPress={() => navigation.navigate('')}
+            onPress={() => navigation.navigate('walletHome')}
             //   disabled={!refcorrect}
           />
         </View>

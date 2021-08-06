@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 import DarkButton from '../../components/reusable/Button/DarkButton';
 import {useSelector} from 'react-redux';
+import Icon from 'react-native-vector-icons/AntDesign';
 
 export default function MobileVerifyToken({navigation}) {
   const [confirmationCode, setConfirmationCode] = useState('');
@@ -63,14 +64,29 @@ export default function MobileVerifyToken({navigation}) {
             to confirm your number
           </Text>
         </View>
-
+        <View style={{justifyContent: 'center', alignItems: 'center'}}>
         <TextInput
-          style={styles.input}
-          onChangeText={onCodeChangeHandler}
+          style={
+            Platform.OS === 'ios'
+              ? styles.input
+              : {
+                  width: 250,
+                  padding: 15,
+                  backgroundColor: 'white',
+                  borderRadius: 10,
+                  shadowColor: '#000',
+                  shadowOffset: {width: 0, height: 2},
+                  shadowOpacity: 0.5,
+
+                  elevation: 5,
+                }
+          }
+          onChangeText={text => validate(text)}
           value={confirmationCode}
           placeholder="000-0000-00"
-          keyboardType="number-pad"
+          
         />
+        </View>
            {/* verifyMobile */}
       </View>
       <View style={styles.buttonsWrapper}>
@@ -79,8 +95,18 @@ export default function MobileVerifyToken({navigation}) {
           onPress={() => navigation.navigate('afterMobileVerify')}
           // disabled={!codeValidate}
         />
-        <TouchableOpacity>
+        <TouchableOpacity style={{
+            marginTop: 20,
+            paddingVertical: 15,
+            paddingHorizontal: 10,
+            flexDirection: 'row',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}>
+        <View style={{flexDirection:"row"}}>
           <Text style={styles.loginText}>Login</Text>
+          <Icon name="right" color="#000000" size={18} />
+          </View>
         </TouchableOpacity>
       </View>
     </View>
@@ -105,16 +131,18 @@ const styles = StyleSheet.create({
   },
   loginText: {
     textAlign: 'center',
-    marginTop: 81,
+   
     fontFamily: 'Poppins-Medium',
   },
   input: {
-    margin: 35,
-    marginBottom: 0,
-    marginTop: 0,
+    width: 200,
     padding: 15,
+    backgroundColor: 'white',
     borderRadius: 10,
-    borderWidth: 1,
+    shadowColor: '#000',
+    shadowOffset: {width: 0, height: 1},
+    shadowOpacity: 0.3,
+    elevation: 5,
   },
   emailText: {
     fontFamily: 'Poppins-SemiBold',

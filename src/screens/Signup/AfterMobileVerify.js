@@ -5,23 +5,23 @@ import {
   Text,
   TouchableOpacity,
   View,
-  AppRegistry
+  AppRegistry,
 } from 'react-native';
-import { colors } from '../../config/colors';
-import '../../../shim' ////// make sure to use es6 import and not require()
-import Bitcoin from 'react-native-bitcoinjs-lib'
-import 'react-native-get-random-values'
-import "@ethersproject/shims"  //for ethers.js
-import { ContractFactory, ethers } from "ethers";
+import {colors} from '../../config/colors';
+import '../../../shim'; ////// make sure to use es6 import and not require()
+import Bitcoin from 'react-native-bitcoinjs-lib';
+import 'react-native-get-random-values';
+import '@ethersproject/shims'; //for ethers.js
+import {ContractFactory, ethers} from 'ethers';
 
-
-export default function AfterMobileVerify({ navigation }) {
+export default function AfterMobileVerify({navigation}) {
   const createUserWallet = async () => {
-    const keypair = Bitcoin.ECPair.makeRandom()
-    console.log(keypair.getAddress())
-    // console.log(navigation.navigate('recoverySeed'))
+    const keypair = Bitcoin.ECPair.makeRandom();
+    console.log(keypair.getAddress());
+    console.log(navigation.navigate('recoverySeed'))
 
-    let privateKey = "0x0123456789012345678901234567890123456789012345678901234567890123";
+    let privateKey =
+      '0x0123456789012345678901234567890123456789012345678901234567890123';
     new ethers.Wallet(privateKey);
 
     let provider = ethers.getDefaultProvider();
@@ -45,28 +45,28 @@ export default function AfterMobileVerify({ navigation }) {
         translucent={true}
       />
       <View style={styles.textContainer}>
-        <View style={{
-          borderBottomLeftRadius: 20,
-          borderBottomRightRadius: 20,
-          borderTopLeftRadius: 20,
-          borderTopRightRadius: 20,
-          overflow: 'hidden',
-          backgroundColor : 'red'
-        }}>
+        <View
+          style={{
+            borderBottomLeftRadius: 20,
+            borderBottomRightRadius: 20,
+            borderTopLeftRadius: 20,
+            borderTopRightRadius: 20,
+            overflow: 'hidden',
+            backgroundColor: 'red',
+          }}>
           <Text style={styles.textHeading}>
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text ever
-            since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only
-            five centuries, but also the leap into electronic
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic
           </Text>
         </View>
-
       </View>
       <View style={styles.buttonContainer}>
         <TouchableOpacity
           style={styles.buttonWrapper}
-          // onPress={() => navigation.navigate('recoverySeed')}
+          onPress={() => navigation.navigate('recoverySeed')}
           onPress={createUserWallet}>
           <Text style={styles.text}>Next</Text>
         </TouchableOpacity>
@@ -108,9 +108,8 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     padding: (10, 30, 10, 30),
     fontFamily: 'Poppins-Regular',
-    fontSize : 14
+    fontSize: 14,
   },
 });
-
 
 // AppRegistry.registerComponent('AfterMobileVerify', () => AfterMobileVerify);

@@ -43,7 +43,6 @@ export default function EmailVerifyToken({navigation}) {
       // setCodeValidate(false);
       setMatchConfirmationCode(true);
       navigation.navigate('createMobile');
-
     }
   };
   return (
@@ -57,31 +56,44 @@ export default function EmailVerifyToken({navigation}) {
 
       <View style={styles.emailWrapper}>
         <View style={styles.textWrapper}>
-          <Text style={styles.emailText}>
-            We have sent you a confirmation email contains code, write code here  to confirm your email.
+          <Text
+            style={
+              Platform.OS === 'ios'
+                ? styles.emailText
+                : {
+                    fontFamily: 'Poppins-SemiBold',
+                    textAlign: 'center',
+                    marginBottom: 37,
+                    fontWeight: 'bold',
+                    fontSize: 17,
+                  }
+            }>
+            We have sent you a confirmation email contains code, write code here
+            to confirm your email.
           </Text>
         </View>
+        <View style={{justifyContent: 'center', alignItems: 'center'}}>
+          <TextInput
+            style={
+              Platform.OS === 'ios'
+                ? styles.input
+                : {
+                    width: 320,
+                    padding: 15,
+                    backgroundColor: 'white',
+                    borderRadius: 10,
+                    shadowColor: '#000',
+                    shadowOffset: {width: 0, height: 2},
+                    shadowOpacity: 0.5,
 
-        <TextInput
-          style={
-            Platform.OS === 'ios'
-              ? styles.input
-              : {
-                  width: 320,
-                  padding: 15,
-                  backgroundColor: 'white',
-                  borderRadius: 10,
-                  shadowColor: '#000',
-                  shadowOffset: {width: 0, height: 2},
-                  shadowOpacity: 0.5,
-
-                  elevation: 5,
-                }
-          }
-          onChangeText={text => validate(text)}
-          value={confirmationCode}
-          placeholder="Confirmation Code Here"
-        />
+                    elevation: 5,
+                  }
+            }
+            onChangeText={text => validate(text)}
+            value={confirmationCode}
+            placeholder="Confirmation Code Here"
+          />
+        </View>
       </View>
       <View style={styles.buttonsWrapper}>
         <DarkButton
@@ -89,7 +101,8 @@ export default function EmailVerifyToken({navigation}) {
           onPress={() => navigation.navigate('createMobile')}
           // disabled={!codeValidate}
         />
-        <TouchableOpacity style={{
+        <TouchableOpacity
+          style={{
             marginTop: 20,
             paddingVertical: 15,
             paddingHorizontal: 10,
@@ -97,9 +110,9 @@ export default function EmailVerifyToken({navigation}) {
             justifyContent: 'center',
             alignItems: 'center',
           }}>
-          <View style={{flexDirection:"row"}}>
-          <Text style={styles.loginText}>Login</Text>
-          <Icon name="right" color="#000000" size={18} />
+          <View style={{flexDirection: 'row'}}>
+            <Text style={styles.loginText}>Login</Text>
+            <Icon name="right" color="#000000" size={18} />
           </View>
         </TouchableOpacity>
       </View>
@@ -117,6 +130,7 @@ const styles = StyleSheet.create({
   },
   emailWrapper: {
     flex: 2.2,
+
     justifyContent: 'flex-end',
   },
   buttonsWrapper: {
@@ -125,7 +139,6 @@ const styles = StyleSheet.create({
   },
   loginText: {
     textAlign: 'center',
-    marginTop: 81,
     fontFamily: 'Poppins-Medium',
   },
   input: {
@@ -144,7 +157,6 @@ const styles = StyleSheet.create({
     marginBottom: 37,
   },
   textWrapper: {
-    margin: 20,
-    marginBottom: 0,
+    margin: 40,
   },
 });

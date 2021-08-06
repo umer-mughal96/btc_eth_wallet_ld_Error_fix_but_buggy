@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,{useState}from 'react'
 import { StatusBar, StyleSheet, Text, View, TextInput } from 'react-native'
 import { colors } from '../../config/colors';
 import DarkButton from '../../components/reusable/Button/DarkButton';
@@ -6,7 +6,7 @@ import { useDispatch } from 'react-redux';
 import { registerUser } from '../../redux/actions/user/user';
 
 export default function RecoverySeed({navigation}) {
-
+  const [recoverySeed,setRecoverySeed] = useState("")
   const dispatch = useDispatch();
 
 
@@ -21,15 +21,30 @@ export default function RecoverySeed({navigation}) {
         <View style={styles.firstBox}>
             <Text style={styles.RecoverySeed}>Recovery Seed</Text>
             <TextInput
-                style={styles.input}
-                onChangeText={text => validate(text)}
-                value="SA122134PPKIASD"
-            />
+          style={
+            Platform.OS === 'ios'
+              ? styles.input
+              : {
+                  width: 320,
+                  padding: 15,
+                  backgroundColor: 'white',
+                  borderRadius: 10,
+                  shadowColor: '#000',
+                  shadowOffset: {width: 0, height: 2},
+                  shadowOpacity: 0.5,
+
+                  elevation: 5,
+                }
+          }
+          onChangeText={text => validate(text)}
+          value={recoverySeed}
+          placeholder="SA122134PPKIASD"
+        />
+                {/* value="SA122134PPKIASD" */}
         </View>
 
         <View style={styles.secondBox}>
-            <Text style={styles.RecoverySeed}>Save this recovery seed,This will be required to 
-            recover your Drau Wallet account</Text>
+            <Text style={styles.RecoverySeed}>Save this recovery seed,This will be required to recover your YFIC Wallet account</Text>
             <DarkButton name="Login" onPress={() => dispatch(registerUser(navigation,"SA122134PPKIASD"))} />
         </View>
        
@@ -52,11 +67,14 @@ const styles = StyleSheet.create({
         marginBottom:44,
     },
     input: {
-        width: 320,
-        padding: 15,
-        borderRadius: 10,
-        borderWidth: 1,
-        marginBottom:44,
+      width: 200,
+      padding: 15,
+      backgroundColor: 'white',
+      borderRadius: 10,
+      shadowColor: '#000',
+      shadowOffset: {width: 0, height: 1},
+      shadowOpacity: 0.3,
+      elevation: 5,
       },
       secondBox:{
         flex: 2,

@@ -68,8 +68,9 @@ export default function ConfirmEmail({navigation}) {
       />
 
       <View style={styles.emailWrapper}>
+      
         <Text style={styles.emailText}>Confirm your Email</Text>
-
+       
         <TextInput
           style={
             Platform.OS === 'ios'

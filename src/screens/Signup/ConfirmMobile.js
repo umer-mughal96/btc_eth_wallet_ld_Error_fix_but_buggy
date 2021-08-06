@@ -11,6 +11,7 @@ import Input from '../../components/reusable/PhoneInput/Input';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {useDispatch, useSelector} from 'react-redux';
 import {sendMobileForCode} from '../../redux/actions/user/user';
+import Icon from 'react-native-vector-icons/AntDesign';
 
 export default function CreateMobile({navigation}) {
   const [existingMobileNumber, setExistingMobileNumber] = useState('');
@@ -62,8 +63,18 @@ export default function CreateMobile({navigation}) {
           onPress={() => navigation.navigate('verifyMobile')}
           // disabled={!numberValid}
         />
-        <TouchableOpacity>
+        <TouchableOpacity style={{
+            marginTop: 20,
+            paddingVertical: 15,
+            paddingHorizontal: 10,
+            flexDirection: 'row',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}>
+        <View style={{flexDirection:"row"}}>
           <Text style={styles.loginText}>Login</Text>
+          <Icon name="right" color="#000000" size={18} />
+          </View>
         </TouchableOpacity>
       </View>
     </View>
@@ -92,7 +103,7 @@ const styles = StyleSheet.create({
   },
   loginText: {
     textAlign: 'center',
-    marginTop: 81,
+    
     fontFamily: 'Poppins-Medium',
   },
 });
