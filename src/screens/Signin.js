@@ -57,7 +57,7 @@ export default function Signin({navigation}) {
       <View style={styles.buttonsWrapper}>
         <DarkButton
           name="Login"
-          onPress={() => navigation.navigate('walletHome')}
+          // onPress={() => navigation.navigate('createPasscode')}
           // disabled={!codeCreated}
         />
         <Text style={styles.restoreText}>Restore Yearn account</Text>
