@@ -34,6 +34,14 @@ export default function Landing({ navigation }) {
 
         <View style={styles.svgWraper}>
           <LandingLogo />
+          {/* <Text   id='Yearn_Cash' data-name="Yearn Cash" transform="translate(121.5 511)" fill='#EEF0FF' font-size="39" font-family="Poppins-Semibold, Poppins" font-weight="600" >Yearn Cash</Text> */}
+   
+
+<Text style={{color:'#EEF0FF', fontSize:29, fontFamily:'Poppins'}} >
+  YEARN CASH
+</Text>
+
+
         </View>
         <View style={styles.buttonsWrapper}>
           <View style={styles.referalWrapper}>
@@ -76,6 +84,8 @@ const styles = StyleSheet.create({
   buttonsWrapper: {
     flex: 1,
     flexDirection: 'column',
+    alignItems: 'center',
+    alignContent:'center'
   },
   referalWrapper: {
     width: 200,

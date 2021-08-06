@@ -10,12 +10,16 @@ import {
 import Svg, {
   G,
   Path,
-  Defs,
-  LinearGradient,
-  Stop,
   Circle,
+  Defs,
+  Stop,
 } from 'react-native-svg';
 import {Card} from 'react-native-shadow-cards';
+
+import LinearGradient from 'react-native-linear-gradient';
+
+import { SvgCss } from 'react-native-svg';
+import { Yearn_logo } from '../../svgs/Yearn_logo';
 
 const DefiSvg = ({navigation}) => {
   return (
@@ -283,44 +287,7 @@ const UpSvg = () => {
   );
 };
 
-const TopSvg = () => {
-  return (
-    <Svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="63"
-      height="63"
-      viewBox="0 0 63 63">
-      <G
-        id="Group_207"
-        data-name="Group 207"
-        transform="translate(-57.5 -446.5)">
-        <G
-          id="Icon_feather-plus-circle"
-          data-name="Icon feather-plus-circle"
-          transform="translate(59 448)">
-          <Path
-            id="Path_41"
-            data-name="Path 41"
-            d="M63,33A30,30,0,1,1,33,3,30,30,0,0,1,63,33Z"
-            transform="translate(-3 -3)"
-            fill="none"
-            stroke="#111b4f"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="3"
-          />
-        </G>
-        <Path
-          id="Icon_awesome-arrow-left"
-          data-name="Icon awesome-arrow-left"
-          d="M15.324,26.9,14,28.217a1.422,1.422,0,0,1-2.018,0L.416,16.654a1.422,1.422,0,0,1,0-2.018L11.985,3.067a1.422,1.422,0,0,1,2.018,0l1.321,1.321A1.43,1.43,0,0,1,15.3,6.429L8.129,13.262h17.1a1.425,1.425,0,0,1,1.428,1.428v1.9a1.425,1.425,0,0,1-1.428,1.428H8.129L15.3,24.855A1.42,1.42,0,0,1,15.324,26.9Z"
-          transform="translate(104.637 465.004) rotate(90)"
-          fill="#111b4f"
-        />
-      </G>
-    </Svg>
-  );
-};
+
 
 const EyeSvg = () => {
   return (
@@ -353,20 +320,6 @@ export default function WalletHome({navigation}) {
           </View>
         </Card>
       </View>
-      <View style={styles.cards}>
-        <Card style={{padding: 10, width: 90, marginLeft: 10, marginRight: 10}}>
-          <TopSvg />
-          <Text style={styles.cardText}>Send</Text>
-        </Card>
-        <Card style={{padding: 10, width: 90, marginLeft: 10, marginRight: 10}}>
-          <TopSvg />
-          <Text style={styles.cardText}>Receive</Text>
-        </Card>
-        <Card style={{padding: 10, width: 90, marginLeft: 10, marginRight: 10}}>
-          <TopSvg />
-          <Text style={styles.cardText}>Exchange</Text>
-        </Card>
-      </View>
       <View style={styles.information}>
         <UpSvg />
         <Text
@@ -387,6 +340,84 @@ export default function WalletHome({navigation}) {
 
         {/* <Text>This is Wallet Home</Text> */}
       </View>
+      <View style={styles.cards}>
+        <Card  style={{ width: '90%',height:80, marginLeft: 10, marginRight: 10, marginBottom:8, flexDirection:'row', borderRadius:12}}>
+        <LinearGradient colors={['#0B7F42', '#001A0A']} style={{width:'100%', height:'100%',padding: 10, borderRadius:12, flex:1, flexDirection:'row'}}>
+        
+         <Yearn_logo></Yearn_logo>
+          <View style={{flex:3, alignContent:'center', justifyContent:'center'}}>
+            <Text style={styles.cardText}>Yearn Cash</Text>
+          <Text style={{color:'white', marginLeft:15}} >YFIC</Text>
+          
+          </View>
+          <View style={{flex:1, alignContent:'center', justifyContent:'center'}}>
+            <Text style={{color:'white', fontWeight:'bold' }}>$5.35</Text>
+            <Text style={{color:'white', fontWeight:'bold' }}>+8.22%</Text>
+         
+          
+          </View>
+          
+          </LinearGradient>
+        </Card>
+        
+        <Card  style={{ width: '90%',height:80, marginLeft: 10, marginRight: 10, marginBottom:8, flexDirection:'row', borderRadius:12}}>
+        <LinearGradient colors={['#0B7F42', '#001A0A']} style={{width:'100%', height:'100%',padding: 10, borderRadius:12, flex:1, flexDirection:'row'}}>
+        
+         <Yearn_logo></Yearn_logo>
+          <View style={{flex:3, alignContent:'center', justifyContent:'center'}}>
+            <Text style={styles.cardText}>BitCoin</Text>
+          <Text style={{color:'white', marginLeft:15}} >BTC</Text>
+          
+          </View>
+          <View style={{flex:1, alignContent:'center', justifyContent:'center'}}>
+            <Text style={{color:'white', fontWeight:'bold' }}>$5.35</Text>
+            <Text style={{color:'white', fontWeight:'bold' }}>+8.22%</Text>
+         
+          
+          </View>
+          
+          </LinearGradient>
+        </Card>
+        
+        <Card  style={{ width: '90%',height:80, marginLeft: 10, marginRight: 10, marginBottom:8, flexDirection:'row', borderRadius:12}}>
+        <LinearGradient colors={['#0B7F42', '#001A0A']} style={{width:'100%', height:'100%',padding: 10, borderRadius:12, flex:1, flexDirection:'row'}}>
+        
+         <Yearn_logo></Yearn_logo>
+          <View style={{flex:3, alignContent:'center', justifyContent:'center'}}>
+            <Text style={styles.cardText}>Ethereum</Text>
+          <Text style={{color:'white', marginLeft:15}} >ETH</Text>
+          
+          </View>
+          <View style={{flex:1, alignContent:'center', justifyContent:'center'}}>
+            <Text style={{color:'white', fontWeight:'bold' }}>$5.35</Text>
+            <Text style={{color:'white', fontWeight:'bold' }}>+8.22%</Text>
+         
+          
+          </View>
+          
+          </LinearGradient>
+        </Card>
+        
+        <Card  style={{ width: '90%',height:80, marginLeft: 10, marginRight: 10, marginBottom:8, flexDirection:'row', borderRadius:12}}>
+        <LinearGradient colors={['#0B7F42', '#001A0A']} style={{width:'100%', height:'100%',padding: 10, borderRadius:12, flex:1, flexDirection:'row'}}>
+        
+         <Yearn_logo></Yearn_logo>
+          <View style={{flex:3, alignContent:'center', justifyContent:'center'}}>
+            <Text style={styles.cardText}>Litecoin</Text>
+          <Text style={{color:'white', marginLeft:15}} >LTC</Text>
+          
+          </View>
+          <View style={{flex:1, alignContent:'center', justifyContent:'center'}}>
+            <Text style={{color:'white', fontWeight:'bold' }}>$5.35</Text>
+            <Text style={{color:'white', fontWeight:'bold' }}>+8.22%</Text>
+         
+          
+          </View>
+          
+          </LinearGradient>
+        </Card>
+      </View>
+     
       <View style={styles.bottomNavigation}>
         <ImageBackground
           source={require('../../assets/bottom-navigation.png')}
@@ -429,10 +460,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   cards: {
-    flex: 2,
+    flex: 3,
     justifyContent: 'center',
+    alignContent:'center',
+    
     alignItems: 'center',
-    flexDirection: 'row',
+    flexDirection: 'column',
   },
   information: {
     flex: 2,
@@ -453,7 +486,14 @@ const styles = StyleSheet.create({
     marginTop: 5,
   },
   cardText: {
-    textAlign: 'center',
+    textAlignVertical:'center',
+  
+    marginLeft:15,
+    fontSize:15,
+    color:'white',
+    fontWeight:'bold',
+    fontFamily:'Poppins-Bold',
+
   },
   blurryText1: {
     fontFamily: 'Poppins',
