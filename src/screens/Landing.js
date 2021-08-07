@@ -36,26 +36,26 @@ export default function Landing({ navigation }) {
         <View style={styles.svgWraper}>
           <LandingLogo />
           {/* <Text   id='Yearn_Cash' data-name="Yearn Cash" transform="translate(121.5 511)" fill='#EEF0FF' font-size="39" font-family="Poppins-Semibold, Poppins" font-weight="600" >Yearn Cash</Text> */}
-   
 
-<Text style={{color:'#EEF0FF', fontSize:29, fontFamily:'Poppins'}} >
-  YEARN CASH
-</Text>
+
+          <Text style={{ color: '#EEF0FF', fontSize: 29, fontFamily: 'Poppins' }} >
+            YEARN CASH
+          </Text>
 
 
         </View>
 
         <View style={styles.buttonsWrapper}>
           <View style={styles.referalWrapper}>
-            <Text 
-            style={styles.referalCode}
-            onPress={() => navigation.navigate('referralScreen')}
+            <Text
+              style={styles.referalCode}
+              onPress={() => navigation.navigate('referralScreen')}
             >Invited? Add Referral Code</Text>
           </View>
           <LightButton
             name="Login"
             onPress={() => {
-              navigation.navigate('walletHome');
+              navigation.navigate('Signin');
             }}
           />
           <TouchableOpacity
@@ -77,9 +77,9 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     backgroundColor: colors.main,
   },
-  linearGradient : {
-    width : '100%',
-    height : "100%"
+  linearGradient: {
+    width: '100%',
+    height: "100%"
   },
   svgWraper: {
     flex: 3,
@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     alignItems: 'center',
-    alignContent:'center'
+    alignContent: 'center'
   },
   referalWrapper: {
     width: 200,

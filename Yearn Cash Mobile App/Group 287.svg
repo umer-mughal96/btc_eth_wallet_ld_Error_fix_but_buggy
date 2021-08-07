@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="47.639" height="47.639" viewBox="0 0 47.639 47.639">
+  <g id="Group_287" data-name="Group 287" transform="translate(-47.181 -400.181)">
+    <path id="Path_162" data-name="Path 162" d="M49.139,26.069A23.069,23.069,0,1,1,26.069,3,23.069,23.069,0,0,1,49.139,26.069Z" transform="translate(44.931 397.931)" fill="#fff" stroke="#00c106" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Icon_awesome-arrow-left" data-name="Icon awesome-arrow-left" d="M10.218,16.166l-.881.881a.948.948,0,0,1-1.345,0L.28,9.338a.948.948,0,0,1,0-1.345L7.993.28a.948.948,0,0,1,1.345,0l.881.881A.953.953,0,0,1,10.2,2.521L5.422,7.076h11.4a.95.95,0,0,1,.952.952V9.3a.95.95,0,0,1-.952.952H5.422L10.2,14.8A.946.946,0,0,1,10.218,16.166Z" transform="translate(62.337 432.889) rotate(-90)" fill="#00c106"/>
+  </g>
+</svg>

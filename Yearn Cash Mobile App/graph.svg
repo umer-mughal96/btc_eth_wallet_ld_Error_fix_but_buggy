@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="418.369" height="339.5" viewBox="0 0 418.369 339.5">
+  <defs>
+    <filter id="BG" x="0" y="0" width="418.369" height="339.5" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-color="#a5a5a5" flood-opacity="0.8"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_249" data-name="Group 249" transform="translate(416 451.5)">
+    <g transform="matrix(1, 0, 0, 1, -416, -451.5)" filter="url(#BG)">
+      <rect id="BG-2" data-name="BG" width="358.369" height="279.5" rx="8" transform="translate(30 30)" fill="#fff"/>
+    </g>
+    <text id="Yearn_cash_Chart" data-name="Yearn cash Chart" transform="translate(-363.868 -396.698)" font-size="14" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="0" y="0">Yearn cash Chart</tspan></text>
+    <rect id="Line" width="295.908" height="0.632" transform="translate(-341.103 -183.419)" fill="#9098ac" opacity="0.149"/>
+    <rect id="Line-2" data-name="Line" width="295.908" height="0.632" transform="translate(-341.103 -216.301)" fill="#9098ac" opacity="0.149"/>
+    <rect id="Line-3" data-name="Line" width="295.908" height="0.632" transform="translate(-341.103 -249.184)" fill="#9098ac" opacity="0.149"/>
+    <rect id="Line-4" data-name="Line" width="295.908" height="0.632" transform="translate(-341.103 -282.066)" fill="#9098ac" opacity="0.149"/>
+    <rect id="Line-5" data-name="Line" width="295.908" height="0.632" transform="translate(-341.103 -314.949)" fill="#9098ac" opacity="0.149"/>
+    <rect id="Line-6" data-name="Line" width="295.908" height="0.632" transform="translate(-341.103 -347.831)" fill="#9098ac" opacity="0.149"/>
+    <text id="Sort_By:" data-name="Sort By:" transform="translate(-160.882 -397.375)" fill="#686868" font-size="8" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">Sort By:</tspan></text>
+    <text id="_0" data-name="$0" transform="translate(-348.441 -182.007)" fill="#9098ac" font-size="8" font-family="Poppins-Regular, Poppins"><tspan x="-10" y="0">$0</tspan></text>
+    <text id="_10" data-name="$10" transform="translate(-348.603 -214.89)" fill="#9098ac" font-size="8" font-family="Poppins-Regular, Poppins"><tspan x="-12.56" y="0">$10</tspan></text>
+    <text id="_20" data-name="$20" transform="translate(-348.5 -247.14)" fill="#9098ac" font-size="8" font-family="Poppins-Regular, Poppins"><tspan x="-14.6" y="0">$20</tspan></text>
+    <text id="_30" data-name="$30" transform="translate(-348.132 -280.022)" fill="#9098ac" font-size="8" font-family="Poppins-Regular, Poppins"><tspan x="-14.712" y="0">$30</tspan></text>
+    <text id="_40" data-name="$40" transform="translate(-348.132 -312.272)" fill="#9098ac" font-size="8" font-family="Poppins-Regular, Poppins"><tspan x="-15.032" y="0">$40</tspan></text>
+    <text id="_50" data-name="$50" transform="translate(-348.132 -345.154)" fill="#9098ac" font-size="8" font-family="Poppins-Regular, Poppins"><tspan x="-15.024" y="0">$50</tspan></text>
+    <path id="Shape" d="M378,623s24.656,49.324,32.161,27.824c0,0,13.4-40.471,19.028-10.118,0,0,11.524,103.706,25.193,31.618,0,0,11.524-52.485,15.276-62.6,0,0,6.164-18.97,8.844,10.75,0,0,2.412,32.882,18.492-20.235,0,0,12.6-37.309,19.564,20.868,0,0,8.844,67.029,16.616,35.412,0,0,13.4-46.794,15.544-54.382,0,0,6.164-22.765,11.792-6.324,0,0,10.72,78.412,16.08,22.765,0,0,2.412-20.235,4.288-29.088,0,0,4.02-13.279,9.112.632,0,0,6.968,15.177,15.812-9.485,0,0,10.452-20.868,22.244,6.956,0,0,12.06,53.75,24.657.632,0,0,5.092-17.073,10.452-13.279" transform="translate(-707.721 -917.081)" fill="none" stroke="#143022" stroke-linecap="round" stroke-width="5"/>
+    <path id="Path_160" data-name="Path 160" d="M-2316.459,2465.2s22.419,48.683,31.858,24.5,16.912-29.148,21.107,7.752,20.845,26.667,26.352,2.481,14.29-70.388,19.4-45.892,9.439,44.962,28.58,40.931,11.537,34.109,20.714,24.187,14.028-57.365,20.714-53.334,8.391,36.279,13.373,33.489,12.455-3.411,16.781-47.752,11.93-18.295,15.6-17.675,7.342,6.512,17.7-22.326,18.879,57.055,29.629,41.551,13.473-48.447,22.156-36.589V2523.8h-283.969Z" transform="translate(1990.242 -2706.252)" fill="#f7fdfb"/>
+    <g id="Group_246" data-name="Group 246" transform="translate(-212.735 -407.904)">
+      <rect id="Rectangle_188" data-name="Rectangle 188" width="39.206" height="17.074" rx="4" transform="translate(0 0)" fill="#f7fdfb"/>
+      <text id="_24h" data-name="24h" transform="translate(19.529 10.265)" font-size="9" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="-17.298" y="0">24h</tspan></text>
+      <path id="Icon_material-keyboard-arrow-down" data-name="Icon material-keyboard-arrow-down" d="M9.9,11.76l2.921,2.914,2.921-2.914.9.9-3.818,3.818L9,12.657Z" transform="translate(17.219 -5.581)"/>
+    </g>
+    <text id="Dec_2021" data-name="Dec 2021" transform="translate(-126.735 -397.64)" font-size="9" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">Dec 2021</tspan></text>
+    <g id="Group_248" data-name="Group 248" transform="translate(9.627 622)">
+      <text id="Jul" transform="translate(-183 -786)" fill="#9098ac" font-size="8" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="-5.908" y="0">Jul</tspan></text>
+      <text id="Aug" transform="translate(-136 -786)" fill="#9098ac" font-size="8" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="-8.096" y="0">Aug</tspan></text>
+      <text id="Sep" transform="translate(-110 -786)" fill="#9098ac" font-size="8" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="-7.596" y="0">Sep</tspan></text>
+      <text id="Oct" transform="translate(-160 -786)" fill="#9098ac" font-size="8" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="-7.024" y="0">Oct</tspan></text>
+      <text id="Nov" transform="translate(-85 -786)" fill="#9098ac" font-size="8" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="-7.74" y="0">Nov</tspan></text>
+      <text id="Dec" transform="translate(-59 -786)" fill="#9098ac" font-size="8" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="-7.704" y="0">Dec</tspan></text>
+      <text id="Jan" transform="translate(-330 -786)" fill="#9098ac" font-size="8" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="-7.564" y="0">Jan</tspan></text>
+      <text id="Feb" transform="translate(-305 -786)" fill="#9098ac" font-size="8" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="-7.24" y="0">Feb</tspan></text>
+      <text id="Mar" transform="translate(-230 -786)" fill="#9098ac" font-size="8" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="-7.776" y="0">Mar</tspan></text>
+      <text id="Apr" transform="translate(-282 -786)" fill="#9098ac" font-size="8" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="-7.036" y="0">Apr</tspan></text>
+      <text id="May" transform="translate(-256 -786)" fill="#9098ac" font-size="8" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="-8.568" y="0">May</tspan></text>
+      <text id="Jun" transform="translate(-205 -786)" fill="#9098ac" font-size="8" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="-7.448" y="0">Jun</tspan></text>
+    </g>
+  </g>
+</svg>

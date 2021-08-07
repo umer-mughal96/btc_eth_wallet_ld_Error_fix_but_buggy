@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63">
+  <g id="Group_161" data-name="Group 161" transform="translate(-238.819 -243.5)">
+    <g id="Icon_feather-plus-circle" data-name="Icon feather-plus-circle" transform="translate(240.319 245)">
+      <path id="Path_41" data-name="Path 41" d="M63,33A30,30,0,1,1,33,3,30,30,0,0,1,63,33Z" transform="translate(-3 -3)" fill="none" stroke="#0b7f42" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+    <path id="Path_65" data-name="Path 65" d="M-509.6,727.792a24.38,24.38,0,0,1,24.349,24.415,24.384,24.384,0,0,1-24.4,24.3,24.376,24.376,0,0,1-24.318-24.385A24.377,24.377,0,0,1-509.6,727.792Zm-10.625,23.262a.831.831,0,0,0,.124.116q5.1,2.64,10.206,5.266a.8.8,0,0,0,.61-.019c.647-.3,1.274-.638,1.907-.965l8.41-4.349-10.643-17.738Zm21.693,5.866-.075-.082c-.179.087-.361.17-.538.262-3.306,1.714-6.615,3.42-9.911,5.153a1.068,1.068,0,0,1-1.124,0c-3.269-1.7-6.548-3.371-9.826-5.051-.2-.1-.407-.191-.611-.287l-.057.1,11.062,13.932Z" transform="translate(779.928 -477.151)" fill="#0b7f42"/>
+  </g>
+</svg>

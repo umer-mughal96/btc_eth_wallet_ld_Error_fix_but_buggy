@@ -207,16 +207,19 @@ export default function Navigation() {
       <Stack.Screen
         options={{
           title: 'Wallet',
+          headerLeft: null,
           headerStyle: {
             backgroundColor: 'white',
             borderRadius: 15,
           },
           headerTintColor: 'black',
-          headerTitleStyle: {
-            fontFamily: 'Poppins-Medium',
-            margin: 80,
-            fontSize: 18,
-          },
+          headerBackTitleVisible : false,
+          
+          // headerTitleStyle: {
+          //   fontFamily: 'Poppins-Medium',
+          //   margin: 80,
+          //   fontSize: 18,
+          // },
         }}
         name="walletHome"
         component={WalletHome}
