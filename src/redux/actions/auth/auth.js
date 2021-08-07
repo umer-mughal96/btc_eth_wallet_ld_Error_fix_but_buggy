@@ -52,11 +52,5 @@ export const userCreateEmail = email => async dispatch => {
 };
 
 export const userCreatePhone = phone => async dispatch => {
-  try {
-    dispatch({type: constants.SET_AUTH_LOADING});
-    dispatch({type: constants.CREATE_PHONE_SUCCESS, payload: phone});
-  } catch (err) {
-    console.log('🚀 ~ file: user.js ~ line 14 ~ err', err);
-    dispatch({type: constants.AUTH_ERROR, payload: err});
-  }
+
 };

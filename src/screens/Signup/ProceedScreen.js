@@ -1,7 +1,8 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet,Platform} from 'react-native';
 import DarkButton from '../../components/reusable/Button/DarkButton';
 import Ticksvgscreen from "../../svgs/ticksvg";
+import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 
 
 
@@ -11,7 +12,7 @@ export default function ProceedScreen(navigation) {
 
     <Ticksvgscreen/>
       <Text style={Styles.textstyle}>Congratulations</Text>
-      <Text style={Styles.textstyle1}>Your YFIC wallet account      has been restored</Text>
+      <Text style={Platform.OS === 'ios' ? Styles.textstyle1 : {fontSize: 22,fontWeight:"bold",width:300,marginLeft:60}}>Your YFIC wallet account      has been restored</Text>
       <DarkButton name="Proceed" />
     </View>
   );

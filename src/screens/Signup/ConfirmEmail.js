@@ -97,8 +97,8 @@ export default function ConfirmEmail({navigation}) {
       <View style={styles.buttonsWrapper}>
         <DarkButton
           name="Next"
-          onPress={() => navigation.navigate('verifyEmail')}
-          // disabled={!emailMatch}
+          onPress={emailHandler}
+          disabled={!emailMatch}
         />
         <TouchableOpacity style={{
             marginTop: 20,

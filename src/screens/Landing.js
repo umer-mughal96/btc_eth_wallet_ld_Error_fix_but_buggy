@@ -60,7 +60,7 @@ export default function Landing({ navigation }) {
           />
           <TouchableOpacity
             style={styles.signup}
-            onPress={() => navigation.navigate('createPasscode')}>
+            onPress={() => navigation.navigate('proceedScreen')}>
             <Text style={styles.signupText}>Signup</Text>
           </TouchableOpacity>
         </View>

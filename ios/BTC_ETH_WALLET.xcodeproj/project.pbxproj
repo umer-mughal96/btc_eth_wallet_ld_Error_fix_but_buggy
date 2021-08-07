@@ -11,7 +11,6 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		37BBF3ABF651514EABBB97BA /* libPods-BTC_ETH_WALLET.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B246D203D4B24F2C6E552EE2 /* libPods-BTC_ETH_WALLET.a */; };
 		3D0D1CF126A09A5F0099724B /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0D1CDF26A09A5E0099724B /* Poppins-ExtraBoldItalic.ttf */; };
 		3D0D1CF226A09A5F0099724B /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0D1CE026A09A5E0099724B /* Poppins-Thin.ttf */; };
 		3D0D1CF326A09A5F0099724B /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0D1CE126A09A5E0099724B /* Poppins-ExtraBold.ttf */; };
@@ -30,8 +29,9 @@
 		3D0D1D0026A09A5F0099724B /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0D1CEE26A09A5F0099724B /* Poppins-ExtraLightItalic.ttf */; };
 		3D0D1D0126A09A5F0099724B /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0D1CEF26A09A5F0099724B /* Poppins-BoldItalic.ttf */; };
 		3D0D1D0226A09A5F0099724B /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0D1CF026A09A5F0099724B /* Poppins-MediumItalic.ttf */; };
+		6FABEB93E6216B16B5A1684C /* libPods-BTC_ETH_WALLET-BTC_ETH_WALLETTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E71B06FDE27531412F3EFB /* libPods-BTC_ETH_WALLET-BTC_ETH_WALLETTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		A4DBD26430CDFCD27A530251 /* libPods-BTC_ETH_WALLET-BTC_ETH_WALLETTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5907D55378DD0A5EF72BCCE0 /* libPods-BTC_ETH_WALLET-BTC_ETH_WALLETTests.a */; };
+		877319B8266B11091C831477 /* libPods-BTC_ETH_WALLET.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32FC5CD7ECEFEF4D34A3D950 /* libPods-BTC_ETH_WALLET.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +48,7 @@
 		00E356EE1AD99517003FC87E /* BTC_ETH_WALLETTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BTC_ETH_WALLETTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* BTC_ETH_WALLETTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTC_ETH_WALLETTests.m; sourceTree = "<group>"; };
+		06E71B06FDE27531412F3EFB /* libPods-BTC_ETH_WALLET-BTC_ETH_WALLETTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BTC_ETH_WALLET-BTC_ETH_WALLETTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		105DDCE5C97F47D2A9C7C9C3 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		10D5A62EBF554C35BD953B10 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* BTC_ETH_WALLET.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTC_ETH_WALLET.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,11 +57,12 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = BTC_ETH_WALLET/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = BTC_ETH_WALLET/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = BTC_ETH_WALLET/main.m; sourceTree = "<group>"; };
+		13B49BDA4299F55DC3AB6771 /* Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests.debug.xcconfig"; path = "Target Support Files/Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests/Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests.debug.xcconfig"; sourceTree = "<group>"; };
 		140A0945C3304CF9AD93DAE0 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		142C5EFC3E1D46D78A5BFDBA /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
 		1F656BD0B4104B41B2718EDA /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		212190759ABB4AEDA3108382 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
-		330BA6E6649E7A53A78FE5B3 /* Pods-BTC_ETH_WALLET.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTC_ETH_WALLET.release.xcconfig"; path = "Target Support Files/Pods-BTC_ETH_WALLET/Pods-BTC_ETH_WALLET.release.xcconfig"; sourceTree = "<group>"; };
+		32FC5CD7ECEFEF4D34A3D950 /* libPods-BTC_ETH_WALLET.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BTC_ETH_WALLET.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D274CCE45F456D9FC79547 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		3D0D1CDF26A09A5E0099724B /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-ExtraBoldItalic.ttf"; path = "../src/assets/fonts/Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		3D0D1CE026A09A5E0099724B /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Thin.ttf"; path = "../src/assets/fonts/Poppins-Thin.ttf"; sourceTree = "<group>"; };
@@ -81,17 +83,15 @@
 		3D0D1CEF26A09A5F0099724B /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-BoldItalic.ttf"; path = "../src/assets/fonts/Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
 		3D0D1CF026A09A5F0099724B /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-MediumItalic.ttf"; path = "../src/assets/fonts/Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
 		51116ADDF0874689AE066201 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
-		5907D55378DD0A5EF72BCCE0 /* libPods-BTC_ETH_WALLET-BTC_ETH_WALLETTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BTC_ETH_WALLET-BTC_ETH_WALLETTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AD5B7F031C34C87BE74FC1A /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
-		77BC468D6F34F3BBE6D5FE16 /* Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests.debug.xcconfig"; path = "Target Support Files/Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests/Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7F6738100D86E81E895224E4 /* Pods-BTC_ETH_WALLET.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTC_ETH_WALLET.debug.xcconfig"; path = "Target Support Files/Pods-BTC_ETH_WALLET/Pods-BTC_ETH_WALLET.debug.xcconfig"; sourceTree = "<group>"; };
+		7E29CC7F782A8EAA0082789F /* Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests.release.xcconfig"; path = "Target Support Files/Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests/Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = BTC_ETH_WALLET/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		85B78580B39A5579F25EC9B9 /* Pods-BTC_ETH_WALLET.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTC_ETH_WALLET.debug.xcconfig"; path = "Target Support Files/Pods-BTC_ETH_WALLET/Pods-BTC_ETH_WALLET.debug.xcconfig"; sourceTree = "<group>"; };
 		8D1B27B9977242FABC64FB30 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
-		A17F4C6B34FEAEE7270BAB5C /* Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests.release.xcconfig"; path = "Target Support Files/Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests/Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests.release.xcconfig"; sourceTree = "<group>"; };
 		B1310C240E604644B4ADE516 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
-		B246D203D4B24F2C6E552EE2 /* libPods-BTC_ETH_WALLET.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BTC_ETH_WALLET.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB0694FBEFC4956B904D36A /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		C6E8F342CC52450E9605560E /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		D0A83FDAFBCC13285E33707E /* Pods-BTC_ETH_WALLET.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTC_ETH_WALLET.release.xcconfig"; path = "Target Support Files/Pods-BTC_ETH_WALLET/Pods-BTC_ETH_WALLET.release.xcconfig"; sourceTree = "<group>"; };
 		EB213BFFA550451384C7E78A /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F10B997D32724B38B9448E98 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4DBD26430CDFCD27A530251 /* libPods-BTC_ETH_WALLET-BTC_ETH_WALLETTests.a in Frameworks */,
+				6FABEB93E6216B16B5A1684C /* libPods-BTC_ETH_WALLET-BTC_ETH_WALLETTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,7 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37BBF3ABF651514EABBB97BA /* libPods-BTC_ETH_WALLET.a in Frameworks */,
+				877319B8266B11091C831477 /* libPods-BTC_ETH_WALLET.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,8 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				B246D203D4B24F2C6E552EE2 /* libPods-BTC_ETH_WALLET.a */,
-				5907D55378DD0A5EF72BCCE0 /* libPods-BTC_ETH_WALLET-BTC_ETH_WALLETTests.a */,
+				32FC5CD7ECEFEF4D34A3D950 /* libPods-BTC_ETH_WALLET.a */,
+				06E71B06FDE27531412F3EFB /* libPods-BTC_ETH_WALLET-BTC_ETH_WALLETTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -234,10 +234,10 @@
 		F6C636373D4F811120FDB693 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7F6738100D86E81E895224E4 /* Pods-BTC_ETH_WALLET.debug.xcconfig */,
-				330BA6E6649E7A53A78FE5B3 /* Pods-BTC_ETH_WALLET.release.xcconfig */,
-				77BC468D6F34F3BBE6D5FE16 /* Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests.debug.xcconfig */,
-				A17F4C6B34FEAEE7270BAB5C /* Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests.release.xcconfig */,
+				85B78580B39A5579F25EC9B9 /* Pods-BTC_ETH_WALLET.debug.xcconfig */,
+				D0A83FDAFBCC13285E33707E /* Pods-BTC_ETH_WALLET.release.xcconfig */,
+				13B49BDA4299F55DC3AB6771 /* Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests.debug.xcconfig */,
+				7E29CC7F782A8EAA0082789F /* Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -249,12 +249,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "BTC_ETH_WALLETTests" */;
 			buildPhases = (
-				0182FF568866F4A20C9E7C59 /* [CP] Check Pods Manifest.lock */,
+				706A8CD24EA3FD9F5AC4214D /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				24506B8868171C6F2576E760 /* [CP] Embed Pods Frameworks */,
-				047973CBBA8D6C091041B4B7 /* [CP] Copy Pods Resources */,
+				033D345341DD62D99709F262 /* [CP] Embed Pods Frameworks */,
+				668F43A7EB7D8EF38ED63DE3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,14 +270,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "BTC_ETH_WALLET" */;
 			buildPhases = (
-				E6BCCD4EE25537CED95D3F3D /* [CP] Check Pods Manifest.lock */,
+				BBA30390A432EECD1E4CC268 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				FC4FABE40CF209F248E96BC2 /* [CP] Embed Pods Frameworks */,
-				C7D5D78E18038716B6BB0112 /* [CP] Copy Pods Resources */,
+				5E099F20CE434D440FCD6D43 /* [CP] Embed Pods Frameworks */,
+				CA9A5A1CC9E5128C3B6199ED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -376,7 +376,58 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		0182FF568866F4A20C9E7C59 /* [CP] Check Pods Manifest.lock */ = {
+		033D345341DD62D99709F262 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests/Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests/Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests/Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E099F20CE434D440FCD6D43 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BTC_ETH_WALLET/Pods-BTC_ETH_WALLET-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BTC_ETH_WALLET/Pods-BTC_ETH_WALLET-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BTC_ETH_WALLET/Pods-BTC_ETH_WALLET-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		668F43A7EB7D8EF38ED63DE3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests/Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests/Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests/Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		706A8CD24EA3FD9F5AC4214D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -398,58 +449,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		047973CBBA8D6C091041B4B7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests/Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests/Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests/Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		24506B8868171C6F2576E760 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests/Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests/Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests/Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C7D5D78E18038716B6BB0112 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BTC_ETH_WALLET/Pods-BTC_ETH_WALLET-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BTC_ETH_WALLET/Pods-BTC_ETH_WALLET-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BTC_ETH_WALLET/Pods-BTC_ETH_WALLET-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E6BCCD4EE25537CED95D3F3D /* [CP] Check Pods Manifest.lock */ = {
+		BBA30390A432EECD1E4CC268 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -471,21 +471,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FC4FABE40CF209F248E96BC2 /* [CP] Embed Pods Frameworks */ = {
+		CA9A5A1CC9E5128C3B6199ED /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BTC_ETH_WALLET/Pods-BTC_ETH_WALLET-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-BTC_ETH_WALLET/Pods-BTC_ETH_WALLET-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BTC_ETH_WALLET/Pods-BTC_ETH_WALLET-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-BTC_ETH_WALLET/Pods-BTC_ETH_WALLET-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BTC_ETH_WALLET/Pods-BTC_ETH_WALLET-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BTC_ETH_WALLET/Pods-BTC_ETH_WALLET-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -540,7 +540,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 77BC468D6F34F3BBE6D5FE16 /* Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests.debug.xcconfig */;
+			baseConfigurationReference = 13B49BDA4299F55DC3AB6771 /* Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -568,7 +568,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A17F4C6B34FEAEE7270BAB5C /* Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests.release.xcconfig */;
+			baseConfigurationReference = 7E29CC7F782A8EAA0082789F /* Pods-BTC_ETH_WALLET-BTC_ETH_WALLETTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -593,7 +593,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F6738100D86E81E895224E4 /* Pods-BTC_ETH_WALLET.debug.xcconfig */;
+			baseConfigurationReference = 85B78580B39A5579F25EC9B9 /* Pods-BTC_ETH_WALLET.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -619,7 +619,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 330BA6E6649E7A53A78FE5B3 /* Pods-BTC_ETH_WALLET.release.xcconfig */;
+			baseConfigurationReference = D0A83FDAFBCC13285E33707E /* Pods-BTC_ETH_WALLET.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

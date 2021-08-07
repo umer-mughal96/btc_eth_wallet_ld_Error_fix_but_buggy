@@ -34,7 +34,7 @@ export default function CreatePasscode({navigation}) {
         <DarkButton
           name="Next"
           onPress={() => navigation.navigate('confrimPasscode')}
-          // disabled={!codeCreated}
+          disabled={!codeCreated}
         />
         <TouchableOpacity
         style={{

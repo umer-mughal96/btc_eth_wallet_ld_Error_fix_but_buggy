@@ -42,10 +42,8 @@ export default function MobileVerifyToken({navigation}) {
       setMatchConfirmationCode(true);
       navigation.navigate('afterMobileVerify');
     } else {
-      // alert('Confirmation Code Dont Match');
-      // setCodeValidate(false);
-      setMatchConfirmationCode(true);
-      navigation.navigate('afterMobileVerify');
+      alert('Confirmation Code Dont Match');
+      setCodeValidate(false);
     }
   };
   return (
@@ -92,8 +90,8 @@ export default function MobileVerifyToken({navigation}) {
       <View style={styles.buttonsWrapper}>
         <DarkButton   
           name="Next"
-          onPress={() => navigation.navigate('afterMobileVerify')}
-          // disabled={!codeValidate}
+          onPress={validateConfirmationCodeHandler}
+          disabled={!codeValidate}
         />
         <TouchableOpacity style={{
             marginTop: 20,

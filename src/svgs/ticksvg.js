@@ -34,10 +34,11 @@ import Svg, {
         ]}
       >
         <Svg height="50%" width="50%" viewBox="0 0 100 100">
+          
           <Circle
             cx="50"
             cy="50"
-            r="45"
+            r="25"
             
             strokeWidth="2.5"
             fill="#0A7C40"

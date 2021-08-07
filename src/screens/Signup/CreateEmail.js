@@ -79,7 +79,7 @@ export default function CreateEmail({navigation}) {
         <DarkButton
           name="Next"
           onPress={() => navigation.navigate('confirmEmail')}
-          // disabled={!emailCorrect}
+          disabled={!emailCorrect}
         />
 
         <TouchableOpacity

@@ -9,7 +9,7 @@ const iniitialState = {
 };
 
 export const User = (state = iniitialState, action) => {
-  const {type, payload} = action;
+  const { type, payload } = action;
   switch (type) {
     case constants.SET_USER_API_LOADING:
       return {
@@ -40,6 +40,14 @@ export const User = (state = iniitialState, action) => {
       return {
         ...state,
         mobileCodeSent: false,
+        loading: false,
+      };
+    case constants.RESET_USER_STATE:
+      return {
+        emailSent: false,
+        emailCode: null,
+        mobileCodeSent: false,
+        mobileCode: null,
         loading: false,
       };
     default:

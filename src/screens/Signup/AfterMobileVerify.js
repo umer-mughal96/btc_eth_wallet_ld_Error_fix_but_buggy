@@ -7,14 +7,26 @@ import {
   View,
   AppRegistry,
 } from 'react-native';
-import {colors} from '../../config/colors';
-import '../../../shim'; ////// make sure to use es6 import and not require()
-import Bitcoin from 'react-native-bitcoinjs-lib';
-import 'react-native-get-random-values';
-import '@ethersproject/shims'; //for ethers.js
-import {ContractFactory, ethers} from 'ethers';
+import { colors } from '../../config/colors';
+import '../../../shim' ////// make sure to use es6 import and not require()
+import Bitcoin from 'react-native-bitcoinjs-lib'
+import 'react-native-get-random-values'
+import "@ethersproject/shims"  //for ethers.js
+import { ContractFactory, ethers } from "ethers";
+import { useDispatch, useSelector } from 'react-redux';
+import { registerUser } from '../../redux/actions/user/user';
 
-export default function AfterMobileVerify({navigation}) {
+
+export default function AfterMobileVerify({ navigation }) {
+
+  const { email, phone, passcode } = useSelector(s => s.Auth)
+
+
+
+  const dispatch = useDispatch()
+
+
+
   const createUserWallet = async () => {
     const keypair = Bitcoin.ECPair.makeRandom();
     console.log(keypair.getAddress());
@@ -34,6 +46,15 @@ export default function AfterMobileVerify({navigation}) {
     // balancePromise.then((balance) => {
     //   console.log(JSON.parse(balance));
     // });
+
+    let userData = {
+      email,
+      passcode,
+      phoneNumber: phone,
+
+    }
+
+    dispatch(registerUser(navigation, userData))
   };
 
   return (
