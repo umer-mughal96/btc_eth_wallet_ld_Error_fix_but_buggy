@@ -7,6 +7,7 @@ import { persistor } from './src/redux/store';
 import { PersistGate } from 'redux-persist/integration/react';
 import './global';
 import { useEffect } from 'react';
+import BottomNavigation from './src/navigation/Bottom';
 const Web3 = require('web3');
 // const Moralis = require('moralis');
 // Moralis.initialize("qR0dYYsalIsmo00S0TMYLB7YAMR5si4JIHf8MuDI");
