@@ -5,8 +5,8 @@ import DarkButton from '../../components/reusable/Button/DarkButton';
 import {useDispatch} from 'react-redux';
 import {registerUser} from '../../redux/actions/user/user';
 
-export default function RecoverySeed({navigation}) {
-  const [recoverySeed] = useState('');
+export default function RecoveryRestore({navigation}) {
+  const [RecoveryRestore , setRecoveryRestore] = useState('');
   const dispatch = useDispatch();
 
   return (
@@ -36,20 +36,19 @@ export default function RecoverySeed({navigation}) {
                 }
           }
           onChangeText={text => validate(text)}
-          value={recoverySeed}
-          placeholder="SA122134PPKIASD"
+          value={RecoveryRestore}
+          placeholder=" "
         />
         {/* value="SA122134PPKIASD" */}
       </View>
 
       <View style={styles.secondBox}>
         <Text style={styles.RecoverySeed}>
-          Save this recovery seed,This will be required to recover your YFIC
-          Wallet account
+        Enter your Recovery seed to restore your YFIC wallet
         </Text>
         <DarkButton
           name="Login"
-          onPress={() => navigation.navigate('restoreScreen')}
+          onPress={() => navigation.navigate('proceedScreen')}
         />
       </View>
     </View>

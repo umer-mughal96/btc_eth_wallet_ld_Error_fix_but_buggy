@@ -17,7 +17,9 @@ import RecoverySeed from '../screens/Signup/RecoverySeed';
 import WalletHome from '../screens/Wallet/WalletHome';
 import DeFi from '../screens/Wallet/DeFi';
 import ReferralScreen from '../screens/Signup/ReferralScreen';
-
+import RestoreScreen from '../screens/Signup/RestoreScreen';
+import RecoveryRestore from "../screens/Signup/RecoveryRestore";
+import ProceedScreen from "../screens/Signup/ProceedScreen";
 export default function Navigation() {
   const Stack = createStackNavigator();
   return (
@@ -26,6 +28,21 @@ export default function Navigation() {
         options={{headerShown: false}}
         name="Landing"
         component={Landing}
+      />
+      <Stack.Screen
+        options={{headerShown: true ,title: '',}}
+        name="restoreScreen"
+        component={RestoreScreen}
+      />
+      <Stack.Screen
+        options={{headerShown: true ,title: '',}}
+        name="proceedScreen"
+        component={ProceedScreen}
+      />
+      <Stack.Screen
+        options={{headerShown: true ,title: '',}}
+        name="recoveryRestore"
+        component={RecoveryRestore}
       />
       <Stack.Screen
         options={{

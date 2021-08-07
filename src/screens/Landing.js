@@ -14,6 +14,7 @@ import { userLogout } from '../redux/actions/auth/auth';
 import LinearGradient from 'react-native-linear-gradient';
 import { LandingLogo } from '../svgs/LandingLogo';
 
+
 export default function Landing({ navigation }) {
   const { token } = useSelector(state => state.Auth);
   const dispatch = useDispatch();
@@ -54,7 +55,7 @@ export default function Landing({ navigation }) {
           <LightButton
             name="Login"
             onPress={() => {
-              navigation.navigate('Signin');
+              navigation.navigate('walletHome');
             }}
           />
           <TouchableOpacity

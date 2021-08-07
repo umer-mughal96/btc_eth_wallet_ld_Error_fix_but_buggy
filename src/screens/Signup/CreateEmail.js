@@ -73,6 +73,7 @@ export default function CreateEmail({navigation}) {
           value={email}
           placeholder="Email"
         />
+
       </View>
       <View style={styles.buttonsWrapper}>
         <DarkButton
