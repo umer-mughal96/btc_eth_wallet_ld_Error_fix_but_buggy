@@ -12,10 +12,9 @@ target 'BTC_ETH_WALLET' do
     :hermes_enabled => false
   )
 
-  pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-async-storage/async-storage'
   pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
 
-  pod 'react-native-randombytes', :path => '../node_modules/react-native-randombytes'
+  pod 'react-native-udp', :path => '../node_modules/react-native-udp'
 
   target 'BTC_ETH_WALLETTests' do
     inherit! :complete

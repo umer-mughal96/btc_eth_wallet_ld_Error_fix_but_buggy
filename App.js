@@ -9,6 +9,9 @@ import './global';
 import { useEffect } from 'react';
 import BottomNavigation from './src/navigation/Bottom';
 const Web3 = require('web3');
+import * as bitcoin from "bitcoinjs-lib"
+
+const TESTNET = bitcoin.networks.testnet;
 // const Moralis = require('moralis');
 // Moralis.initialize("qR0dYYsalIsmo00S0TMYLB7YAMR5si4JIHf8MuDI");
 
@@ -16,8 +19,15 @@ const Web3 = require('web3');
 
 
 const App = () => {
-
+  // console.log("Mounted")
   useEffect(async () => {
+
+    
+
+    const keyPair = await bitcoin.ECPair.makeRandom();
+    console.log("🚀 ~ file: App.js ~ line 28 ~ useEffect ~ keyPair", keyPair)
+      const { address } =await bitcoin.payments.p2pkh({ pubkey: keyPair.publicKey });
+      console.log("🚀 ~ file: App.js ~ line 27 ~ useEffect ~ address", address)
       // GET ETHERIUMM BALANCE BY PUBLIC KEY
 
     // const web3 = new Web3(new Web3.providers.HttpProvider("https://mainnet.infura.io/v3/a1bbc7b88cb54b16993c14bf231bbce9"))

@@ -344,7 +344,6 @@ export default function WalletHome({ navigation }) {
 
         {/* <Text>This is Wallet Home</Text> */}
       </View>
-      <ScrollView   >
         <View style={styles.balanceCard}>
           <Card style={{ width: '90%', height: 80, marginLeft: 10, marginRight: 10, marginBottom: 8, flexDirection: 'row', borderRadius: 12 }}>
             <LinearGradient colors={['#0B7F42', '#001A0A']} style={{ width: '100%', height: '100%', padding: 10, borderRadius: 12, flex: 1, flexDirection: 'row' }}>
@@ -364,77 +363,8 @@ export default function WalletHome({ navigation }) {
 
             </LinearGradient>
           </Card>
-          <Card style={{ width: '90%', height: 80, marginLeft: 10, marginRight: 10, marginBottom: 8, flexDirection: 'row', borderRadius: 12 }}>
-            <LinearGradient colors={['#0B7F42', '#001A0A']} style={{ width: '100%', height: '100%', padding: 10, borderRadius: 12, flex: 1, flexDirection: 'row' }}>
-
-              <Yearn_logo width={63} height={63} />
-              <View style={{ flex: 3, alignContent: 'center', justifyContent: 'center' }}>
-                <Text style={styles.cardText}>Yearn Cash</Text>
-                <Text style={{ color: 'white', marginLeft: 15 }} >YFIC</Text>
-
-              </View>
-              <View style={{ flex: 1, alignContent: 'center', justifyContent: 'center' }}>
-                <Text style={{ color: 'white', fontWeight: 'bold' }}>$5.35</Text>
-                <Text style={{ color: 'white', fontWeight: 'bold' }}>+8.22%</Text>
-
-
-              </View>
-
-            </LinearGradient>
-          </Card>
-          <Card style={{ width: '90%', height: 80, marginLeft: 10, marginRight: 10, marginBottom: 8, flexDirection: 'row', borderRadius: 12 }}>
-            <LinearGradient colors={['#0B7F42', '#001A0A']} style={{ width: '100%', height: '100%', padding: 10, borderRadius: 12, flex: 1, flexDirection: 'row' }}>
-
-              <Yearn_logo width={63} height={63} />
-              <View style={{ flex: 3, alignContent: 'center', justifyContent: 'center' }}>
-                <Text style={styles.cardText}>Yearn Cash</Text>
-                <Text style={{ color: 'white', marginLeft: 15 }} >YFIC</Text>
-
-              </View>
-              <View style={{ flex: 1, alignContent: 'center', justifyContent: 'center' }}>
-                <Text style={{ color: 'white', fontWeight: 'bold' }}>$5.35</Text>
-                <Text style={{ color: 'white', fontWeight: 'bold' }}>+8.22%</Text>
-
-
-              </View>
-
-            </LinearGradient>
-          </Card>
-          <Card style={{ width: '90%', height: 80, marginLeft: 10, marginRight: 10, marginBottom: 8, flexDirection: 'row', borderRadius: 12 }}>
-            <LinearGradient colors={['#0B7F42', '#001A0A']} style={{ width: '100%', height: '100%', padding: 10, borderRadius: 12, flex: 1, flexDirection: 'row' }}>
-
-              <Yearn_logo width={63} height={63} />
-              <View style={{ flex: 3, alignContent: 'center', justifyContent: 'center' }}>
-                <Text style={styles.cardText}>Yearn Cash</Text>
-                <Text style={{ color: 'white', marginLeft: 15 }} >YFIC</Text>
-
-              </View>
-              <View style={{ flex: 1, alignContent: 'center', justifyContent: 'center' }}>
-                <Text style={{ color: 'white', fontWeight: 'bold' }}>$5.35</Text>
-                <Text style={{ color: 'white', fontWeight: 'bold' }}>+8.22%</Text>
-
-
-              </View>
-
-            </LinearGradient>
-          </Card><Card style={{ width: '90%', height: 80, marginLeft: 10, marginRight: 10, marginBottom: 8, flexDirection: 'row', borderRadius: 12 }}>
-            <LinearGradient colors={['#0B7F42', '#001A0A']} style={{ width: '100%', height: '100%', padding: 10, borderRadius: 12, flex: 1, flexDirection: 'row' }}>
-
-              <Yearn_logo width={63} height={63} />
-              <View style={{ flex: 3, alignContent: 'center', justifyContent: 'center' }}>
-                <Text style={styles.cardText}>Yearn Cash</Text>
-                <Text style={{ color: 'white', marginLeft: 15 }} >YFIC</Text>
-
-              </View>
-              <View style={{ flex: 1, alignContent: 'center', justifyContent: 'center' }}>
-                <Text style={{ color: 'white', fontWeight: 'bold' }}>$5.35</Text>
-                <Text style={{ color: 'white', fontWeight: 'bold' }}>+8.22%</Text>
-
-
-              </View>
-
-            </LinearGradient>
-          </Card>
+         
+          
 
           <Card style={{ width: '90%', height: 80, marginLeft: 10, marginRight: 10, marginBottom: 8, flexDirection: 'row', borderRadius: 12 }}>
             <LinearGradient colors={['#0B7F42', '#001A0A']} style={{ width: '100%', height: '100%', padding: 10, borderRadius: 12, flex: 1, flexDirection: 'row' }}>
@@ -493,7 +423,6 @@ export default function WalletHome({ navigation }) {
             </LinearGradient>
           </Card>
         </View>
-      </ScrollView>
       <View style={styles.bottomNavigation}>
         <PathSvg />
 
